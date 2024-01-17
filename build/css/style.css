@@ -1330,6 +1330,33 @@ p {
     height: 21.875vw;
   }
 }
+.scene-1-page-6-header {
+  margin-bottom: 10vh;
+}
+.scene-1-page-6-svg-sheme {
+  width: 141.8518518519vh;
+  height: 50.9259259259vh;
+  max-width: 100%;
+}
+.scene-1-page-6-btn-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.scene-1-page-6-btn {
+  width: 22%;
+  text-transform: initial;
+}
+.scene-1-page-6-btn:nth-child(2) {
+  margin-right: 7vw;
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-6-header {
+    margin-bottom: 12vh;
+    font-size: 4vmin;
+  }
+}
 .scene-2-page-1 .page-container {
   padding-top: 2.703704vh;
   padding-bottom: 2.703704vh;

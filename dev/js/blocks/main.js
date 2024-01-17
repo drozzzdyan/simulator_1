@@ -75,7 +75,7 @@ function setInteractivePage3() {
 document.addEventListener('DOMContentLoaded', () => {
   calculateMinHeight();
   createBackgroundAnimation();
-  setDecorationType(1);
+  // setDecorationType(1);
   setBtnControl();
 
   setInteractivePage3();
