@@ -1,0 +1,388 @@
+.scene-2-page-9-2 {
+
+
+  .circle-dec-7 {
+    left: 20%;
+    width: 28.62963vh;
+    height: 24.62963vh;
+  }
+
+  .header {
+    margin-bottom: 3vh;
+  }
+
+  &__notice {
+    margin-top: auto;
+    @include fontProperty(1.581vmin, 1, 400, #fff, left);
+  }
+
+  .descr-pink {
+    color: var(--font-color-pink);
+  }
+
+  .page-body__wrapper {
+    display: flex;
+    gap: 2.107vmin;
+    margin-bottom: 2.845vmin;
+  }
+
+  &__right {
+    width: 35%;
+  }
+
+  &__left {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__item-bg {
+    width: 100%;
+    padding: 1.475vmin 2vmin;
+    border-radius: 12.454px;
+    background: linear-gradient(300deg, #494D51 -73.1%, #2D3035 81.5%);
+    box-shadow: 1.661px 2.491px 8.303px 0px #070709 inset, -1.661px -1.661px 8.303px 0px rgba(255, 255, 255, 0.05) inset;
+  }
+
+  &__top-one-text {
+    @include fontProperty(3.372vmin, 1.2, 700, var(--font-color-pink), left);
+
+  }
+
+  &__top-text-color {
+    @include fontProperty(2.107vmin, 1.2, 700, var(--font-color-pink), center)
+  }
+
+  &__top-two-item {
+    flex-grow: 1;
+
+  }
+
+  &__top {
+    display: flex;
+    gap: 1.054vmin;
+    margin-bottom: 1.054vmin;
+  }
+
+  &__top-one {
+    display: flex;
+    align-items: center;
+    width: 37%;
+  }
+
+  &__top-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1.054vmin;
+    width: 31.5%;
+  }
+
+  &__top-three {
+    display: flex;
+    flex-direction: column;
+    gap: 1.054vmin;
+    width: 31.5%;
+  }
+
+  &__items {
+    display: flex;
+    gap: 1.054vmin;
+  }
+
+  &__left-bg {
+    border-radius: 10px;
+    border: 1.5px solid #323465;
+    background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
+    backdrop-filter: blur(22px);
+    padding: 2.740vmin;
+  }
+
+
+
+
+
+  &__two {
+    display: flex;
+    gap: 1.054vmin;
+    margin-bottom: 1.054vmin;
+  }
+
+  &__three {
+    display: flex;
+    gap: 1.054vmin;
+  }
+
+  &__middle-one {
+    width: 37%;
+  }
+
+  &__middle-two {
+    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5vmin;
+  }
+
+  &__middle-three {
+    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5vmin;
+
+
+  }
+
+  &__middle-wrap-block {
+    display: flex;
+    gap: 4.215vmin;
+    justify-content: space-around;
+
+    &:last-child {
+      .scene-2-page-9-2__middle-count::after {
+        display: none;
+      }
+    }
+  }
+
+  &__middle-count {
+    // flex-basis: 11.275vmin;
+
+    position: relative;
+    @include fontProperty(2.107vmin, 1, 400, #fff, center);
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 50%;
+      width: 5vmin;
+      margin-left: -2.5vmin;
+      border-bottom: 1px solid #fff;
+
+
+    }
+
+  }
+
+  &__middle-one-list {
+    padding: 0 0 0 3vmin;
+    margin: 0;
+  }
+
+  &__middle-one-list-item {
+    margin-bottom: 0.5vmin;
+    @include fontProperty(2.107vmin, 1, 400, #fff, left);
+  }
+
+
+
+  //right side
+
+
+
+  &__right-bg {
+    border-radius: 10px;
+    border: 1.5px solid #323465;
+
+    background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
+
+    backdrop-filter: blur(22px);
+  }
+
+  &__right-text-wrap {
+    padding: 2.740vmin 3.583vmin;
+  }
+
+  &__right-title {
+    @include fontProperty(3.372vmin, 1, 700, #fff, left);
+    margin-bottom: 2.107vmin;
+  }
+
+  &__right-list-item {
+    @include fontProperty(2.318vmin, 1.2, 700, var(--second-screen-color), left);
+  }
+
+  &__middle-one-text {
+    @include fontProperty(3vmin, 1, 700, var(--second-screen-color), left);
+    margin-bottom: 1.370vmin;
+  }
+
+  &__right-list {
+    padding: 0 0 0 3vmin;
+    margin: 0;
+  }
+
+  &__right-list-item-color-white {
+    color: #fff;
+    font-weight: 400;
+  }
+
+  &__right-animate-block {
+    position: relative;
+  }
+
+  &__right-animate-block-wrap {
+    position: relative;
+    width: 100%;
+
+    height: 40.371vmin;
+    background-image: url(./../images/abstraction_dec_right_type_6@2x.png);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+
+  &__right-animate-small {
+    width: 3%;
+    position: absolute;
+    right: 39%;
+    top: 35%;
+    animation: scene2Page9 3s linear infinite .5s;
+  }
+
+  &__right-animate-medium {
+    width: 5%;
+    position: absolute;
+    right: 34%;
+    top: 26%;
+    animation: scene2Page9 3s linear infinite 0.7s;
+  }
+
+  &__right-animate-big {
+    // @include calculateItemSizeVH(244, 192);
+    width: 31%;
+    height: auto;
+    position: absolute;
+    right: 6%;
+    top: 8%;
+    animation: scene2Page9 3s linear infinite 1s;
+  }
+
+  &__right-cell-ico {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+
+  .scene-2-page-9-2 {
+    &__right-animate-small {
+
+      top: 29%;
+    }
+
+    &__right-animate-medium {
+      top: 21%;
+
+    }
+
+    &__right-animate-big {
+      top: 2%;
+
+    }
+  }
+
+
+}
+
+@media (max-width: 844px) {
+
+  .scene-2-page-9-2 {
+    &__right-animate-small {
+
+      top: 8%;
+    }
+
+    &__right-animate-medium {
+      top: -2%;
+
+    }
+
+    &__right-animate-big {
+      top: -22%;
+
+    }
+  }
+
+
+}
+
+@media (max-aspect-ratio: 7/5) {
+
+
+  .scene-2-page-9-2 {
+    &__right-animate-block-wrap {
+      height: 26.371vmin;
+    }
+
+
+    &__right-text-wrap {
+      padding: 1.5vmin 1vmin;
+    }
+
+    &__item-bg {
+      padding: 1.5vmin;
+    }
+
+    &__top-one-text {
+      font-size: 2.372vmin;
+    }
+
+    &__middle-one-text {
+      font-size: 2vmin;
+
+    }
+
+    &__top-text-color {
+      font-size: 1.4vmin;
+    }
+
+    &__left {
+      width: 60%;
+      padding: 1.5vmin;
+    }
+
+    &__right {
+      width: 40%;
+    }
+
+    &__middle-one-list-item {
+      font-size: 1.2vmin;
+    }
+
+    &__middle-count {
+      font-size: 1.2vmin;
+
+    }
+
+    &__right-title {
+      font-size: 2.8vmin;
+    }
+
+    &__right-list-item {
+      font-size: 2vmin;
+    }
+  }
+
+}
+
+@keyframes scene2Page9 {
+  0% {
+    // opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    height: auto;
+  }
+
+  100% {
+    // opacity: 1;
+    height: 0;
+  }
+}
