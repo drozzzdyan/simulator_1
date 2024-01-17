@@ -49,18 +49,6 @@
     box-shadow:
       0.2vh 0.3vh 1vh 0vh #070709 inset,
       -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  &-board-line:hover {
-    transform: scale(1.05);
-  }
-
-  &-board-ico {
-    flex-shrink: 0;
-    @include calculateItemSizeVH(100, 90);
-    fill: var(--font-color-pink);
-    transition: fill 0.3s ease-in-out;
   }
 
   &-board-descr {
