@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Takeda</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/all.min.js"></script>
+</head>
+
+<body>
+  <div class="decorations" id="main-decoration">
+    <div class="circle-dec circle-dec-1"></div>
+    <div class="circle-dec circle-dec-2"></div>
+    <div class="circle-dec circle-dec-3"></div>
+    <div class="circle-dec circle-dec-4"></div>
+    <!-- type 1 -->
+    <picture class="abstraction-dec abstraction-dec-left abstraction-type-1">
+      <source srcset="images/webp/abstraction_dec_left_type_1@2x.webp 2x, images/webp/abstraction_dec_left_type_1@1x.webp 1x" type="image/webp">
+      <source srcset="images/abstraction_dec_left_type_1@2x.png 2x, images/abstraction_dec_left_type_1@1x.png 1x" type="image/png">
+      <img src="images/abstraction_dec_left_type_1@1x.png" alt="-">
+    </picture>
+    <picture class="abstraction-dec abstraction-dec-right abstraction-type-1">
+      <source srcset="images/webp/abstraction_dec_right_type_1@2x.webp 2x, images/webp/abstraction_dec_right_type_1@1x.webp 1x" type="image/webp">
+      <source srcset="images/abstraction_dec_right_type_1@2x.png 2x, images/abstraction_dec_right_type_1@1x.png 1x" type="image/png">
+      <img src="images/abstraction_dec_right_type_1@1x.png" alt="-">
+    </picture>
+    <!-- type 2 -->
+    <picture class="abstraction-dec abstraction-dec-bottom abstraction-type-2">
+      <source srcset="images/webp/abstraction_dec_bottom_type_2@2x.webp 2x, images/webp/abstraction_dec_bottom_type_2@1x.webp 1x" type="image/webp">
+      <source srcset="images/abstraction_dec_bottom_type_2@2x.png 2x, images/abstraction_dec_bottom_type_2@1x.png 1x" type="image/png">
+      <img src="images/abstraction_dec_bottom_type_2@1x.png" alt="-">
+    </picture>
+    <!-- type 3 -->
+    <picture class="abstraction-dec abstraction-dec-left abstraction-type-3">
+      <source srcset="images/webp/abstraction_dec_left_type_3@2x.webp 2x, images/webp/abstraction_dec_left_type_3@1x.webp 1x" type="image/webp">
+      <source srcset="images/abstraction_dec_left_type_3@2x.png 2x, images/abstraction_dec_left_type_3@1x.png 1x" type="image/png">
+      <img src="images/abstraction_dec_left_type_3@1x.png" alt="-">
+    </picture>
+    <picture class="abstraction-dec abstraction-dec-right abstraction-type-3">
+      <source srcset="images/webp/abstraction_dec_right_type_3@2x.webp 2x, images/webp/abstraction_dec_right_type_3@1x.webp 1x" type="image/webp">
+      <source srcset="images/abstraction_dec_right_type_3@2x.png 2x, images/abstraction_dec_right_type_3@1x.png 1x" type="image/png">
+      <img src="images/abstraction_dec_right_type_3@1x.png" alt="-">
+    </picture>
+  </div>
+  <div class="plug">
+    <div class="decorations type-4">
+      <div class="circle-dec circle-dec-5"></div>
+      <div class="circle-dec circle-dec-6"></div>
+      <picture class="abstraction-dec abstraction-dec-bottom abstraction-type-4">
+        <source srcset="images/webp/abstraction_dec_bottom_type_4@2x.webp 2x, images/webp/abstraction_dec_bottom_type_4@1x.webp 1x" type="image/webp">
+        <source srcset="images/abstraction_dec_bottom_type_4@2x.png 2x, images/abstraction_dec_bottom_type_4@1x.png 1x" type="image/png">
+        <img src="images/abstraction_dec_bottom_type_4@1x.png" alt="-">
+      </picture>
+      <picture class="abstraction-dec abstraction-dec-top abstraction-type-4">
+        <source srcset="images/webp/abstraction_dec_top_type_4@2x.webp 2x, images/webp/abstraction_dec_top_type_4@1x.webp 1x" type="image/webp">
+        <source srcset="images/abstraction_dec_top_type_4@2x.png 2x, images/abstraction_dec_top_type_4@1x.png 1x" type="image/png">
+        <img src="images/abstraction_dec_top_type_4@1x.png" alt="-">
+      </picture>
+    </div>
+    <div class="plug-container">
+      <svg class="svg-logo">
+        <use xlink:href="images/symbol/sprite.svg#logo"></use>
+      </svg>
+      <h2 class="header-big plug-header">
+        Переверните устройство
+      </h2>
+      <picture class="plug-pic">
+        <source srcset="images/webp/img_tel@2x.webp 2x, images/webp/img_tel@1x.webp 1x" type="image/webp">
+        <source srcset="images/img_tel@2x.png 2x, images/img_tel@1x.png 1x" type="image/png">
+        <img src="images/img_tel@1x.png" alt="-">
+      </picture>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="page active" id="page-start">
+      <div class="page-container">
+        <svg class="svg-logo">
+          <use xlink:href="images/symbol/sprite.svg#logo"></use>
+        </svg>
+        <h2 class="header-big page-persons-header">
+          Выберите профиль пациента с&nbsp;рецидивом множественной миеломы
+        </h2>
+        <div class="persons">
+          <div class="persons-card">
+            <picture class="persons-pic">
+              <source srcset="images/webp/ico_person_1@2x.webp 2x, images/webp/ico_person_1@1x.webp 1x" type="image/webp">
+              <source srcset="images/ico_person_1@2x.png 2x, images/ico_person_1@1x.png 1x" type="image/png">
+              <img src="images/ico_person_1@1x.png" alt="-">
+            </picture>
+            <div class="descr descr-bold descr-mid persons-descr">
+              Пожилой пациент с&nbsp;сопутствующей патологией, полинейропатией на&nbsp;фоне&nbsp;приема бортезомибсодержащих схем
+            </div>
+            <button class="btn-reset persons-btn js-btn-control" data-target-open="scene-1-page-1" data-target-close="page-start">ВЫБРАТЬ</button>
+          </div>
+          <div class="persons-card">
+            <picture class="persons-pic">
+              <source srcset="images/webp/ico_person_2@2x.webp 2x, images/webp/ico_person_2@1x.webp 1x" type="image/webp">
+              <source srcset="images/ico_person_2@2x.png 2x, images/ico_person_2@1x.png 1x" type="image/png">
+              <img src="images/ico_person_2@1x.png" alt="-">
+            </picture>
+            <div class="descr descr-bold descr-mid persons-descr">
+              Пожилой пациент с&nbsp;рецидивной&nbsp;ММ, с&nbsp;сопутствующей патологией (UNFIT), группы высокого цитогенетического риска
+            </div>
+            <button class="btn-reset persons-btn js-btn-control" data-target-open="scene-2-page-1" data-target-close="page-start">ВЫБРАТЬ</button>
+          </div>
+          <div class="persons-card">
+            <picture class="persons-pic">
+              <source srcset="images/webp/ico_person_3@2x.webp 2x, images/webp/ico_person_3@1x.webp 1x" type="image/webp">
+              <source srcset="images/ico_person_3@2x.png 2x, images/ico_person_3@1x.png 1x" type="image/png">
+              <img src="images/ico_person_3@1x.png" alt="-">
+            </picture>
+            <div class="descr descr-bold descr-mid persons-descr">
+              Молодой, активный пациент с&nbsp;медленно-прогрессирующим течением заболевания с&nbsp;сопутствующими заболеваниями
+            </div>
+            <button class="btn-reset persons-btn js-btn-control" data-target-open="scene-3-page-1" data-target-close="page-start">ВЫБРАТЬ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page scene-1-page-1" id="scene-1-page-1">
+      <div class="page-container">
+        <h2 class="header scene-1-page-1-header">
+          Пожилой пациент с&nbsp;сопутствующей патологией, полинейропатией на&nbsp;фоне приема бортезомибсодержащих схем
+        </h2>
+        <div class="scene-1-page-1-board">
+          <div class="scene-1-page-1-board-left">
+            <div class="circle-dec-7"></div>
+            <svg class="scene-1-page-1-svg">
+              <use xlink:href="images/symbol/sprite.svg#scene_1_page_1_grandmom"></use>
+            </svg>
+          </div>
+          <div class="scene-1-page-1-board-right">
+            <div class="scene-1-page-1-cell-line">
+              <div class="scene-1-page-1-cell scene-1-page-1-cell-mini">
+                <svg class="scene-1-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_person"></use>
+                </svg>
+                <div class="scene-1-page-1-descr-wrapper">
+                  <p class="descr descr-bold descr-pink">
+                    Возраст
+                  </p>
+                  <p class="descr">
+                    77&nbsp;лет
+                  </p>
+                </div>
+              </div>
+              <div class="scene-1-page-1-cell scene-1-page-1-cell-big">
+                <svg class="scene-1-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_prescription"></use>
+                </svg>
+                <div class="scene-1-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-pink descr-bold">Диагноз</span> множественная миелома
+                    был поставлен 4 года назад
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="scene-1-page-1-cell-line">
+              <div class="scene-1-page-1-cell scene-1-page-1-cell-big">
+                <svg class="scene-1-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_honeycomb"></use>
+                </svg>
+                <div class="scene-1-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-pink descr-bold">Цитогенетика/FISH:</span> стандартный риск
+                  </p>
+                </div>
+              </div>
+              <div class="scene-1-page-1-cell scene-1-page-1-cell-mini">
+                <svg class="scene-1-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_person"></use>
+                </svg>
+                <div class="scene-1-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-pink descr-bold">ECOG:</span> 3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3 class="header-smallest header-pink header-left scene-1-page-1-board-header">
+              Сопутствующие заболевания:
+            </h3>
+            <ul class="descr scene-1-page-1-board-list">
+              <li>
+                Гипертоническая болезнь III&nbsp;ст., ИБС, Стенокардия напряжения II&nbsp;ФК, ХСН IIБ
+              </li>
+              <li>
+                Стадии (III&nbsp;ФК)
+              </li>
+              <li>
+                Сахарный диабет, 2&nbsp;типа
+              </li>
+              <li>
+                Миеломная нефропатия (ХБП 3Б, СКФ 40&nbsp;мл/мин/1,73 м2)​
+              </li>
+            </ul>
+            <h3 class="header-smallest header-pink header-left scene-1-page-1-board-header">
+              Предыдущие схемы терапии:
+            </h3>
+            <ul class="descr scene-1-page-1-board-list">
+              <li>
+                Достигнуто ОЧХО на&nbsp;8&nbsp;циклах VMP (НР: периферическая моторная полинейропатия 3&nbsp;ст. (слабость мышц в&nbsp;нижних конечностей)
+              </li>
+              <li>
+                Длительность ответа&nbsp;&mdash; 2&nbsp;года
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-1-page-2" data-target-close="scene-1-page-1" data-decoration="2">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="page scene-1-page-2" id="scene-1-page-2">
+      <div class="page-container">
+        <h2 class="header scene-1-page-2-header">
+          Ослабленное физическое состояние (UNFIT) + индолентное течение заболевания
+        </h2>
+        <h2 class="header-mid header-pink scene-1-page-2-subheader">
+          Пожилой пациент с&nbsp;сопутствующей патологией, полинейропатией на&nbsp;фоне&nbsp;приема бортезомибсодержащих схем. 1-й рецидив&nbsp;ММ
+        </h2>
+        <div class="page-body scene-1-page-2-boards">
+          <div class="scene-1-page-2-board scene-1-page-2-board-left">
+            <div class="scene-1-page-2-board-line">
+              <svg class="scene-1-page-2-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_microscope"></use>
+              </svg>
+              <h3 class="header-small header-left scene-1-page-2-board-header">
+                Результаты лабораторно-иструментальных исследований&nbsp;1
+              </h3>
+            </div>
+            <div class="scene-1-page-2-board-line">
+              <div class="scene-1-page-2-board-cell">
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    Гемоглобин:
+                  </span>
+                  <br>Hb&nbsp;11,4&nbsp;г/дл
+                </p>
+              </div>
+              <div class="scene-1-page-2-board-cell">
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    Ca:
+                  </span>
+                  <br>3,63&nbsp;ммоль/л
+                </p>
+              </div>
+              <div class="scene-1-page-2-board-cell">
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    СКФ по&nbsp;формуле CKD-EPI:
+                  </span>
+                  <br>40&nbsp;мл/мин/1,73 м2
+                </p>
+              </div>
+            </div>
+            <div class="scene-1-page-2-board-line">
+              <div class="scene-1-page-2-board-cell scene-1-page-2-board-cell-alone">
+                <svg class="scene-1-page-2-board-line-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_skelet"></use>
+                </svg>
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    Исследование скелета:
+                  </span>
+                  <br>многочисленные участки деструкции в&nbsp;костях черепа, позвоночнике, новые очаги в&nbsp;костях таза
+                </p>
+              </div>
+            </div>
+            <div class="scene-1-page-2-board-line-svg">
+              <svg class="scene-1-page-2-board-svg-bottom">
+                <use xlink:href="images/symbol/sprite.svg#arrow_top_text_1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="scene-1-page-2-board scene-1-page-2-board-right">
+            <div class="scene-1-page-2-board-line">
+              <svg class="scene-1-page-2-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_microscope"></use>
+              </svg>
+              <h3 class="header-small header-left scene-1-page-2-board-header">
+                Результаты лабораторно-иструментальных исследований&nbsp;2
+              </h3>
+            </div>
+            <div class="scene-1-page-2-board-line">
+              <div class="scene-1-page-2-board-cell">
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    ЛДГ:
+                  </span>
+                  N
+                </p>
+              </div>
+              <div class="scene-1-page-2-board-cell">
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    М-протеин IgGk:
+                  </span>
+                  <br>35 г/дл​
+                </p>
+              </div>
+              <div class="scene-1-page-2-board-cell">
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    Миелограмма:
+                  </span>
+                  <br>плазматические клетки 25%
+                </p>
+              </div>
+            </div>
+            <div class="scene-1-page-2-board-line">
+              <div class="scene-1-page-2-board-cell scene-1-page-2-board-cell-alone">
+                <svg class="scene-1-page-2-board-line-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_done"></use>
+                </svg>
+                <p class="descr scene-1-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    Рефрактерность к леналидомиду и бортезомибу
+                  </span>
+                  <br>отсутствует
+                </p>
+              </div>
+            </div>
+            <div class="scene-1-page-2-board-line-svg">
+              <svg class="scene-1-page-2-board-svg-bottom">
+                <use xlink:href="images/symbol/sprite.svg#arrow_top_text_2"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-1-page-3" data-target-close="scene-1-page-2">
+          определить цели терапии
+        </button>
+      </div>
+    </section>
+
+    <section class="page scene-1-page-3" id="scene-1-page-3">
+      <div class="page-container">
+        <h2 class="header scene-1-page-3-header">
+          Пожилой пациент с&nbsp;сопутствующей патологией, полинейропатией на&nbsp;фоне приема бортезомибсодержащих схем
+        </h2>
+        <div class="page-body scene-1-page-3-board">
+          <div class="scene-1-page-3-board-left">
+            <h3 class="header-mid header-left header-pink scene-1-page-3-board-header">
+              Какие цели терапии вы&nbsp;ставите перед собой в&nbsp;данном случае?
+            </h3>
+            <div class="scene-1-page-3-board-line js-interactive-board">
+              <svg class="scene-1-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_settings"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-1-page-3-board-subheader">
+                Баланс эффективности/безопасности применения
+              </h3>
+            </div>
+            <div class="scene-1-page-3-board-line js-interactive-board">
+              <svg class="scene-1-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_leaves"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-1-page-3-board-subheader">
+                Сохранение качества жизни
+              </h3>
+            </div>
+            <div class="scene-1-page-3-board-line js-interactive-board">
+              <svg class="scene-1-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_eye"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-1-page-3-board-subheader">
+                Возможность длительного контроля заболевания
+              </h3>
+            </div>
+            <div class="scene-1-page-3-board-line js-interactive-board">
+              <svg class="scene-1-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_cool"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-1-page-3-board-subheader">
+                Удобство приема
+              </h3>
+            </div>
+          </div>
+          <div class="scene-1-page-3-board-right">
+            <div class="circle-dec-8"></div>
+            <svg class="scene-1-page-3-svg">
+              <use xlink:href="images/symbol/sprite.svg#scene_1_page_3_grandmom"></use>
+            </svg>
+            <svg class="scene-1-page-3-bubble">
+              <use xlink:href="images/symbol/sprite.svg#scene_1_page_3_bubble_text"></use>
+            </svg>
+          </div>
+        </div>
+
+        <button class="btn-reset btn js-btn-show-interactive show" data-target-show=".scene-1-page-3-btn-controll" data-target-bubble=".scene-1-page-3-bubble">
+          Цели выбраны
+        </button>
+
+        <button class="btn-reset btn js-btn-control scene-1-page-3-btn-controll" data-target-open="scene-1-page-4" data-target-close="scene-1-page-3" data-decoration="3">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="page scene-1-page-4" id="scene-1-page-4">
+      <div class="page-container">
+        <h2 class="header">
+          Достижение полного ответа&nbsp;&mdash; важная цель терапии для всех пациентов с&nbsp;ММ
+        </h2>
+        <div class="page-body">
+
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-1-page-5" data-target-close="scene-1-page-4" data-decoration="2">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="page scene-1-page-5" id="scene-1-page-5">
+      <div class="page-container">
+        <h2 class="header scene-1-page-5-header">
+          Терапия 1-го рецидива в&nbsp;РФ
+        </h2>
+        <div class="page-body">
+          <svg class="scene-1-page-5-svg-sheme">
+            <use xlink:href="images/symbol/sprite.svg#scene_1_page_5_sheme"></use>
+          </svg>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="page-start" data-target-close="scene-1-page-5" data-decoration="1">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+
+
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="page scene-2-page-1" id="scene-2-page-1">
+      <div class="page-container">
+        <h2 class="header scene-2-page-1-header">
+          Пожилой пациент с&nbsp;рецидивной&nbsp;ММ,
+          с&nbsp;сопутствующей патологией (UNFIT), группы
+          высокого цитогенетического риска
+        </h2>
+        <div class="scene-2-page-1-board">
+          <div class="scene-2-page-1-board-left">
+            <div class="circle-dec-7"></div>
+            <div class="scene-2-page-1__anim-block">
+
+              <img class="scene-2-page-1__anim-close scene-2-page-1__anim-img" src="images/gramps.png" alt="">
+              <img class="scene-2-page-1__anim-open scene-2-page-1__anim-img" src="images/gramps2.png" alt="">
+            </div>
+
+          </div>
+          <div class="scene-2-page-1-board-right">
+            <div class="scene-2-page-1-cell-line">
+              <div class="scene-2-page-1-cell scene-2-page-1-cell-mini">
+                <svg class="scene-2-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#scene-2-page-1-ico_person"></use>
+                </svg>
+                <div class="scene-2-page-1-descr-wrapper">
+                  <p class="descr descr-bold descr-blue">
+                    Возраст
+                  </p>
+                  <p class="descr">
+                    72&nbsp;лет
+                  </p>
+                </div>
+              </div>
+              <div class="scene-2-page-1-cell scene-2-page-1-cell-big">
+                <svg class="scene-2-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#scene-2-page-1-ico_diagnosis"></use>
+                </svg>
+                <div class="scene-2-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-blue descr-bold">Диагноз</span> множественная миелома
+                    был поставлен 1,5 года назад
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="scene-2-page-1-cell-line">
+              <div class="scene-2-page-1-cell scene-2-page-1-cell-big">
+                <svg class="scene-2-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#scene-2-page-1-ico_moleculs"></use>
+                </svg>
+                <div class="scene-2-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-blue descr-bold">Цитогенетика/FISH:</span> выявлена del 17p.
+                  </p>
+                </div>
+              </div>
+              <div class="scene-2-page-1-cell scene-2-page-1-cell-mini">
+                <svg class="scene-2-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#scene-2-page-1-ico_ok"></use>
+                </svg>
+                <div class="scene-2-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-blue descr-bold">ECOG:</span> 2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <h3 class="header-smallest header-blue header-left scene-2-page-1-board-header">
+              Сопутствующие заболевания:
+            </h3>
+            <ul class="descr scene-2-page-1-board-list">
+              <li>
+                Гипертоническая болезнь III стадии
+              </li>
+              <li>
+                ИБС, Стенокардия напряжения II ФК
+              </li>
+              <li>
+                ХСН IIБ стадии
+              </li>
+              <li>
+                Бронхиальная астма, атопическая, легкого интермиттирующего течения, ремиссия. ДН – 1 ст ​
+              </li>
+              <li>
+                Миеломная нефропатия (ХБП 3Б, СКФ 35 мл/мин/1,73 м2)​
+              </li>
+            </ul>
+            <h3 class="header-smallest header-blue header-left scene-2-page-1-board-header">
+              Предыдущие схемы терапии:
+            </h3>
+            <ul class="descr scene-2-page-1-board-list">
+              <li>
+                VСD 8 циклов + золедроновая кислота – достигнут ОЧХО
+              </li>
+              <li>
+                Нежелательные реакции: периферическая моторная полинейропатия 2 степени
+              </li>
+              <li>
+                Длительность ответа 10 месяцев
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-2-page-2" data-target-close="scene-2-page-1" data-decoration="2">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="page scene-2-page-2" id="scene-2-page-2">
+      <div class="page-container">
+        <h2 class="header scene-2-page-2-header">
+          Ослабленное физическое состояние (UNFIT)
+          + агрессивное течение заболевание
+        </h2>
+        <h2 class="header-mid header-pink scene-2-page-2-subheader">
+          Пожилой пациент с&nbsp;рецидивной&nbsp;ММ, с&nbsp;сопутствующей патологией
+          (UNFIT), группы высокого цитогенетического риска. 1-й Рецидив&nbsp;ММ
+        </h2>
+        <div class="page-body scene-2-page-2-boards">
+          <div class="scene-2-page-2-board scene-2-page-2-board-left">
+            <div class="scene-2-page-2-board-line">
+              <svg class="scene-2-page-2-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_microscope-blue"></use>
+              </svg>
+              <h3 class="header-small header-left scene-2-page-2-board-header">
+                Результаты лабораторно-иструментальных исследований&nbsp;1
+              </h3>
+            </div>
+            <div class="scene-2-page-2-board-line">
+              <div class="scene-2-page-2-board-cell">
+                <p class="descr scene-2-page-2-descr">
+                  <span class="descr-bold descr-blue">
+                    Гемоглобин:
+                  </span>
+                  <br>10,0 г/дл
+                </p>
+              </div>
+              <div class="scene-2-page-2-board-cell scene-2-page-2-board-cell-width">
+                <p class="descr scene-2-page-2-descr">
+                  <span class="descr-bold descr-blue">
+                    Креатинин:
+                  </span>
+                  <br>1,9 мг/дл СКФ по формуле CKD-EPI 35 мл/мин/1,73 м2​
+                </p>
+              </div>
+
+            </div>
+            <div class="scene-2-page-2-board-line">
+              <div class="scene-2-page-2-board-cell scene-2-page-2-board-cell-alone">
+                <svg class="scene-2-page-2-board-line-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_skelet-blue"></use>
+                </svg>
+                <p class="descr scene-2-page-2-descr">
+                  <span class="descr-bold descr-blue">
+                    Исследование скелета:
+                  </span>
+                  множественные литические очаги в своде черепа, подвздошных костях, новые очаги в телах позвонков и ребрах
+                </p>
+              </div>
+            </div>
+            <div class="scene-2-page-2-board-line-svg">
+              <svg class="scene-2-page-2-board-svg-bottom">
+                <use xlink:href="images/symbol/sprite.svg#arrow_top_text_1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="scene-2-page-2-board scene-2-page-2-board-right">
+            <div class="scene-2-page-2-board-line">
+              <svg class="scene-2-page-2-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_microscope-blue"></use>
+              </svg>
+              <h3 class="header-small header-left scene-2-page-2-board-header">
+                Результаты лабораторно-иструментальных исследований&nbsp;2
+              </h3>
+            </div>
+            <div class="scene-2-page-2-board-line">
+              <div class="scene-2-page-2-board-cell scene-2-page-2-board-cell-width">
+                <p class="descr scene-2-page-2-descr">
+                  <span class="descr-bold descr-blue">
+                    Миелограмма:
+                  </span>
+                  <br>плазматические клетки 45%
+                </p>
+              </div>
+              <div class="scene-2-page-2-board-cell">
+                <p class="descr scene-2-page-2-descr">
+                  <span class="descr-bold descr-blue">
+                    М-протеин IgGk:
+                  </span>
+                  <br>38 г/дл
+                </p>
+              </div>
+
+            </div>
+            <div class="scene-2-page-2-board-line">
+              <div class="scene-2-page-2-board-cell scene-2-page-2-board-cell-alone">
+                <svg class="scene-2-page-2-board-line-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_done-blue"></use>
+                </svg>
+                <p class="descr scene-2-page-2-descr">
+                  <span class="descr-bold descr-blue">
+                    Рефрактерность к леналидомиду и бортезомибу
+                  </span>
+                  <br>отсутствует
+                </p>
+              </div>
+            </div>
+            <div class="scene-2-page-2-board-line-svg">
+              <svg class="scene-2-page-2-board-svg-bottom">
+                <use xlink:href="images/symbol/sprite.svg#arrow_top_text_2"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-2-page-3" data-target-close="scene-2-page-2">
+          определить цели терапии
+        </button>
+      </div>
+    </section>
+
+    <section class="page scene-2-page-3" id="scene-2-page-3">
+      <div class="page-container">
+        <h2 class="header scene-2-page-3-header">
+          Пожилой пациент с&nbsp;рецидивной&nbsp;ММ,
+          с&nbsp;сопутствующей патологией (UNFIT), группы
+          высокого цитогенетического риска
+        </h2>
+        <div class="page-body scene-2-page-3-board">
+          <div class="scene-2-page-3-board-left">
+            <h3 class="header-mid header-left header-pink scene-2-page-3-board-header">
+              Какие цели терапии вы&nbsp;ставите перед собой в&nbsp;данном случае?
+            </h3>
+            <div class="scene-2-page-3-board-line js-interactive-board">
+              <svg class="scene-2-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#round-blue"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-2-page-3-board-subheader">
+                Эффективность терапии в&nbsp;группе высокого цитогенетического риска сопоставимая с&nbsp;группой стандартного риска
+              </h3>
+            </div>
+            <div class="scene-2-page-3-board-line js-interactive-board">
+              <svg class="scene-2-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_leaves"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-2-page-3-board-subheader">
+                Сохранение качества жизни
+              </h3>
+            </div>
+            <div class="scene-2-page-3-board-line js-interactive-board">
+              <svg class="scene-2-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_eye"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-2-page-3-board-subheader">
+                Возможность длительного контроля заболевания
+              </h3>
+            </div>
+
+          </div>
+          <div class="scene-2-page-3-board-right">
+            <div class="circle-dec-8"></div>
+            <svg class="scene-2-page-3-svg">
+              <use xlink:href="images/symbol/sprite.svg#scene-2-page-3-gramps"></use>
+            </svg>
+            <svg class="scene-2-page-3-bubble">
+              <use xlink:href="images/symbol/sprite.svg#scene_1_page_3_bubble_text"></use>
+            </svg>
+          </div>
+        </div>
+
+        <button class="btn-reset btn js-btn-show-interactive show" data-target-show=".scene-2-page-3-btn-controll" data-target-bubble=".scene-2-page-3-bubble">
+          Цели выбраны
+        </button>
+
+        <button class="btn-reset btn js-btn-control scene-2-page-3-btn-controll" data-target-open="scene-2-page-4" data-target-close="scene-2-page-3" data-decoration="3">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+
+    </section>
+
+    <section class="page scene-2-page-4" id="scene-2-page-4">
+      <div class="page-container">
+        <h2 class="header">
+          Достижение полного ответа&nbsp;&mdash; важная цель терапии для всех пациентов с&nbsp;ММ
+        </h2>
+        <div class="page-body">
+          <div class="scene-2-page-4__spinner">
+            <p class="scene-2-page-4__text scene-2-page-4__text1">
+              Интенсификация<br>терапии
+            </p>
+            <p class="scene-2-page-4__text scene-2-page-4__text2">
+              Toксичность
+            </p>
+            <p class="scene-2-page-4__text scene-2-page-4__text3">
+              Прекращение<br>лечения
+            </p>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-2-page-5" data-target-close="scene-2-page-4" data-decoration="2">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="page scene-2-page-5" id="scene-2-page-5">
+
+      <div class="page-container">
+        <h2 class="header">
+          Терапия 1-го рецидива в РФ
+        </h2>
+        <div class="page-body">
+          <div class="scene-2-page-5__top-arrow">
+            <svg class="scene-2-page-5-cell-ico">
+              <use xlink:href="images/symbol/sprite.svg#scene-2-page-5__top-arrow"></use>
+            </svg>
+          </div>
+          <div class="scene-2-page-5__info">
+            <div class="scene-2-page-5__info-wrap">
+              <div class="scene-2-page-5__left">
+                <p class="scene-2-page-5__text">Бортезомиб-содержащие схемы
+                  (VD, VCD, PAD, RVD и т.д.)</p>
+              </div>
+            </div>
+            <div class="scene-2-page-5__info-wrap">
+              <div class="scene-2-page-5__right">
+                <p class="scene-2-page-5__text scene-2-page-5__blue-text">
+                  Леналидомид-содержащие схемы (Rd, RCD) + комбинации с&nbsp;новыми препаратами (KRd, <span class="scene-2-page-5__white-color">IxaRd</span> , DaraRd, DaraVd, EloRd)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-2-page-5__btns_block">
+          <button class="btn-reset btn js-btn-control scene-2-page-5__btn-controls" data-target-open="page-start" data-target-close="scene-2-page-5" data-decoration="1">
+            IxaRd
+          </button>
+          <button class="btn-reset btn js-btn-control scene-2-page-5__btn-controls" data-target-open="page-start" data-target-close="scene-2-page-5">
+            KRd
+          </button>
+          <button class="btn-reset btn js-btn-control scene-2-page-5__btn-controls" data-target-open="page-start" data-target-close="scene-2-page-5">
+            EloRd
+          </button>
+          <button class="btn-reset btn js-btn-control scene-2-page-5__btn-controls" data-target-open="page-start" data-target-close="scene-2-page-5">
+            DRd
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- 
+      Шаблон секции:
+      Если необходимо добавить собственные кастомные стили на слайд, то делаем их с приставкой
+      scene-1-page-2, например как на слайде выше, стили кладём в соответсвующую папку ветки
+    -->
+    <section class="page scene-1-page-2" id="scene-1-page-2">
+      <!-- Контейнер страницы -->
+      <div class="page-container">
+        <!-- Общие стили заголовков можно найти в base/_base.scss, там же и остальные общие стили -->
+        <h2 class="header">
+          Заголовок
+        </h2>
+        <!-- Сюда суёшь наполнение любое -->
+        <div class="page-body">
+          <!-- Например текстик -->
+          <p class="descr">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime voluptates corrupti explicabo accusamus, eius atque natus ex, illum facilis reiciendis iste vero, assumenda velit optio eveniet earum animi. Modi?
+          </p>
+        </div>
+        <!-- 
+          Кнопка управления страницами (должна иметь специальный класс js-btn-control для работы скрипта):
+          data-target-open - указать id открываемой страницы
+          data-target-close - указать id закрываемой страницы (не забыть!)
+          data-decoration - указать тип декорации, которая должна быть активирована (если декораци не нужна, просто не указываем её)
+
+          Класс btn - стилевой класс для кнопок управления
+        -->
+        <button class="btn-reset btn js-btn-control" data-target-open="page-start" data-target-close="scene-1-page-2" data-decoration="1">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
