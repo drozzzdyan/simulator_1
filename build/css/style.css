@@ -459,7 +459,7 @@ samp {
   --color-circle-dec-blue: #004373;
   --font-main: Helvetica, "Roboto", sans-serif;
   --font-color-pink: #ff4787;
-  --font-color-blue: #67bcfa;
+  --font-color-blue: #1ea0ff;
   --btn-background-color-pink: #ff4787;
   --second-screen-color: #1EA0FF;
   --five-screen-color: #67BCFA;
@@ -545,6 +545,9 @@ p {
 }
 .header-pink {
   color: var(--font-color-pink);
+}
+.header-blue {
+  color: var(--font-color-blue);
 }
 .header-left {
   text-align: left;
