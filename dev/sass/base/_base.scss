@@ -66,8 +66,16 @@ p {
     color: var(--font-color-pink);
   }
 
+  &-blue {
+    color: var(--font-color-blue);
+  }
+
   &-left {
     text-align: left;
+  }
+
+  &-upper {
+    text-transform: uppercase
   }
 }
 

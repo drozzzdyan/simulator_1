@@ -1,0 +1,35 @@
+.scene-1-page-6 {
+  &-header {
+    margin-bottom: 10vh;
+  }
+
+  &-svg-sheme {
+    @include calculateItemSizeVH(1532, 550);
+    max-width: 100%;
+  }
+
+  &-btn-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-btn {
+    width: 22%;
+    text-transform: initial;
+  }
+
+  &-btn:nth-child(2) {
+    margin-right: 7vw;
+  }
+}
+
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-6 {
+    &-header {
+      margin-bottom: 12vh;
+      font-size: 4vmin;
+    }
+  }
+}
