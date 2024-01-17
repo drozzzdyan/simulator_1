@@ -1664,10 +1664,10 @@ p {
   transition: color 0.3s ease-in-out;
 }
 .scene-2-page-3-board-line.selected .scene-2-page-3-board-ico {
-  fill: var(--font-color-blue);
+  fill: var(--font-color-pink);
 }
 .scene-2-page-3-board-line.selected .scene-2-page-3-board-subheader {
-  color: var(--font-color-blue);
+  color: var(--font-color-pink);
 }
 .scene-2-page-3-svg {
   position: absolute;
@@ -1738,10 +1738,6 @@ p {
     height: 23.2666666667vh;
   }
 }
-.scene-2-page-3-board-line.selected .scene-2-page-3-board-ico {
-  fill: var(--font-color-pink);
-}
-
 .scene-2-page-4 .header {
   max-width: 60vmax;
 }
@@ -1751,7 +1747,7 @@ p {
   background-image: url(../images/scene-2-page-4-spinner.svg);
   background-size: cover;
   width: 102.2222222222vh;
-  height: 63.3333333333vh;
+  height: 58.2407407407vh;
 }
 .scene-2-page-4__text {
   font-size: 2.407vmin;
@@ -1767,12 +1763,12 @@ p {
 }
 .scene-2-page-4__text2 {
   position: absolute;
-  top: 44%;
+  top: 47%;
   right: 10%;
 }
 .scene-2-page-4__text3 {
   position: absolute;
-  bottom: 18%;
+  bottom: 11%;
   left: 6%;
 }
 

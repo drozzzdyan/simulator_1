@@ -10,7 +10,7 @@
     margin-top: 5.926vmin;
     background-image: url(../images/scene-2-page-4-spinner.svg);
     background-size: cover;
-    @include calculateItemSizeVH(1104, 684)
+    @include calculateItemSizeVH(1104, 629)
   }
 
   &__text {
@@ -25,13 +25,13 @@
 
   &__text2 {
     position: absolute;
-    top: 44%;
+    top: 47%;
     right: 10%;
   }
 
   &__text3 {
     position: absolute;
-    bottom: 18%;
+    bottom: 11%;
     left: 6%;
   }
 }
