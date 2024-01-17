@@ -75,11 +75,11 @@
   }
 
   &-board-line.selected &-board-ico {
-    fill: var(--font-color-blue);
+    fill: var(--font-color-pink);
   }
 
   &-board-line.selected &-board-subheader {
-    color: var(--font-color-blue);
+    color: var(--font-color-pink);
   }
 
   &-svg {
@@ -161,6 +161,6 @@
   }
 }
 
-.scene-2-page-3-board-line.selected .scene-2-page-3-board-ico {
-  fill: var(--font-color-pink);
-}
+// .scene-2-page-3-board-line.selected .scene-2-page-3-board-ico {
+//   fill: var(--font-color-pink);
+// }
