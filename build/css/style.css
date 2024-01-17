@@ -1299,6 +1299,22 @@ p {
     height: 23.2666666667vh;
   }
 }
+.scene-1-page-4-header {
+  width: 70%;
+  margin-bottom: 6vh;
+}
+.scene-1-page-4-svg-spinner {
+  width: 102.2222222222vh;
+  height: 58.1481481481vh;
+  max-width: 100%;
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-4-header {
+    width: 70%;
+    font-size: 4vmin;
+  }
+}
 .scene-1-page-5-header {
   margin-bottom: 4vh;
 }
