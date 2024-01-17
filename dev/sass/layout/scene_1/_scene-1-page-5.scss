@@ -1,0 +1,20 @@
+.scene-1-page-5 {
+  &-header {
+    margin-bottom: 4vh;
+  }
+
+  &-svg-sheme {
+    @include calculateItemSizeVH(1543, 420);
+    max-width: 100%;
+  }
+}
+
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-5 {
+    &-svg-sheme {
+      @include calculateItemSizeVW(1543, 420);
+    }
+  }
+  
+}

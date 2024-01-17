@@ -1,0 +1,60 @@
+// Заглушка
+.plug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  min-height: inherit;
+  z-index: 5000;
+  background-color: #000;
+
+  &-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @include calculatePaddingsToVH(20, 20, 40, 40, 800);
+  }
+
+  &-header {
+    margin-bottom: 3vh;
+    font-size: 8vw;
+  }
+
+  &-pic {
+    @include calculateItemSizeVH(335, 607, 900);
+    animation: 2.2s ease-in-out 0s infinite swing;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media (orientation: portrait) {
+  .plug {
+    display: flex;
+  }
+}

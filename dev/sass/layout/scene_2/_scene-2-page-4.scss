@@ -1,0 +1,37 @@
+.scene-2-page-4 {
+
+
+  .header {
+    max-width: 60vmax;
+  }
+
+  &__spinner {
+    position: relative;
+    margin-top: 5.926vmin;
+    background-image: url(../images/scene-2-page-4-spinner.svg);
+    background-size: cover;
+    @include calculateItemSizeVH(1104, 684)
+  }
+
+  &__text {
+    @include fontProperty(2.407vmin, 1.2, 400, #fff, left)
+  }
+
+  &__text1 {
+    position: absolute;
+    top: 11%;
+    left: 6%;
+  }
+
+  &__text2 {
+    position: absolute;
+    top: 44%;
+    right: 10%;
+  }
+
+  &__text3 {
+    position: absolute;
+    bottom: 18%;
+    left: 6%;
+  }
+}

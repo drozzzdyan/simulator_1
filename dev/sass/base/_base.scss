@@ -1,0 +1,157 @@
+@import "../utilities/mixins";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  @include font;
+}
+
+body {
+  min-height: var(--body-min-height);
+  margin: 0;
+  @include font;
+  background-color: var(--bg-color-page);
+}
+
+main {
+  min-height: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include resetMargins;
+}
+
+p {
+  @include resetMargins;
+}
+
+.btn-reset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  -moz-outline: none;
+}
+
+// Общие стили для заголовков
+.header {
+  @include fontProperty(4.6vmin, normal, 700); // 50px
+
+  &-big {
+    @include fontProperty(5.5vmin, normal, 700); // 60px
+  }
+
+  &-mid {
+    @include fontProperty(3vmin, 120%, 700); // 32px
+  }
+
+  &-small {
+    @include fontProperty(2.6vmin, 120%, 700); // 28px
+  }
+
+  &-smallest {
+    @include fontProperty(2.2vmin, 120%, 700); // 24px
+  }
+
+  &-pink {
+    color: var(--font-color-pink);
+  }
+
+  &-left {
+    text-align: left;
+  }
+}
+
+// Общие стили для текста
+.descr {
+  @include fontProperty(2vmin, normal, 400, #fff, left); // 22px
+
+  &-pink {
+    color: var(--font-color-pink);
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-mid {
+    text-align: center;
+  }
+}
+
+.svg-logo {
+  @include calculateItemSizeVH(198, 68);
+  margin-bottom: 3vh;
+}
+
+// Общие стили для открываемых страниц
+.page {
+  display: none;
+  min-height: inherit;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+
+  &-container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 185vmin;
+    min-height: inherit;
+    @include calculatePaddingsToVH(40, 40, 60, 60);
+  }
+
+  &-body {
+    position: relative;
+    flex-grow: 1;
+  }
+}
+
+.page.active {
+  display: flex;
+}
+
+.page.hide {
+  opacity: 0;
+}
+
+// Общие стили кнопок управления
+.btn {
+  padding: 3vh 3vw;
+  border-radius: 8vmin;
+  @include fontProperty(2.8vmin, normal, 700);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: var(--btn-background-color-pink);
+  transition: transform 0.3s ease-in-out;
+
+  &-arrow {
+    @include calculateItemSizeVH(410, 38);
+  }
+}
+
+.btn:focus {
+  transform: scale(1.02);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+@media (orientation: portrait) {
+  .page.active {
+    display: none;
+  }
+}

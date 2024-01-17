@@ -1,0 +1,200 @@
+// Стили декораций
+.decorations {
+  width: 0;
+  height: 0;
+}
+
+.circle-dec {
+  position: fixed;
+  border-radius: 100%;
+  filter: blur(8vw);
+
+  &-1 {
+    top: 5%;
+    left: -10%;
+    @include calculateItemSizeVW(682, 682);
+    background-color: var(--color-circle-dec-pink);
+  }
+
+  &-2 {
+    top: 55%;
+    left: 7%;
+    @include calculateItemSizeVW(357, 357);
+    background-color: var(--color-circle-dec-blue);
+  }
+
+  &-3 {
+    top: 25%;
+    right: -15%;
+    @include calculateItemSizeVW(682, 682);
+    background-color: var(--color-circle-dec-pink);
+  }
+
+  &-4 {
+    top: 5%;
+    right: -7%;
+    @include calculateItemSizeVW(357, 357);
+    background-color: var(--color-circle-dec-blue);
+  }
+
+  &-5 {
+    top: 5%;
+    left: -55%;
+    @include calculateItemSizeVW(682, 682, 500);
+    background-color: var(--color-circle-dec-pink);
+    filter: blur(30vw);
+  }
+
+  &-6 {
+    bottom: -15%;
+    right: -25%;
+    @include calculateItemSizeVW(357, 357, 500);
+    background-color: var(--color-circle-dec-blue);
+    filter: blur(30vw);
+  }
+
+  &-7 {
+    position: absolute;
+    border-radius: 100%;
+    bottom: 3%;
+    left: 7%;
+    @include calculateItemSizeVH(536, 536);
+    background-color: var(--color-circle-dec-blue);
+    filter: blur(3vw);
+  }
+
+  &-8 {
+    position: absolute;
+    border-radius: 100%;
+    bottom: 3%;
+    right: 15%;
+    @include calculateItemSizeVH(430, 430);
+    background-color: var(--color-circle-dec-blue);
+    filter: blur(3vw);
+  }
+}
+
+.abstraction-dec {
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-left {
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+
+  &-right {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+
+  &-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &-top {
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &-left.abstraction-type-1 {
+    @include calculateItemSizeVH(700, 1080);
+  }
+
+  &-right.abstraction-type-1 {
+    @include calculateItemSizeVH(800, 1080);
+  }
+
+  &-bottom.abstraction-type-2 {
+    @include calculateItemSizeVW(1920, 500);
+  }
+
+  &-left.abstraction-type-3 {
+    @include calculateItemSizeVH(430, 1080);
+  }
+
+  &-right.abstraction-type-3 {
+    @include calculateItemSizeVH(530, 1080);
+  }
+
+  &-bottom.abstraction-type-4 {
+    @include calculateItemSizeVW(500, 530, 500);
+  }
+
+  &-top.abstraction-type-4 {
+    @include calculateItemSizeVW(500, 190, 500);
+  }
+}
+
+// type controll
+.decorations.type-1 {
+  .abstraction {
+    &-type-1 {
+      opacity: 1;
+    }
+  }
+}
+
+.decorations.type-2 {
+  .abstraction {
+    &-type-2 {
+      opacity: 1;
+    }
+  }
+}
+
+.decorations.type-3 {
+  .abstraction {
+    &-type-3 {
+      opacity: 1;
+    }
+  }
+}
+
+.decorations.type-4 {
+  .abstraction {
+    &-type-4 {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .circle-dec {
+    &-1 {
+      @include calculateItemSizeVW(682, 682, 1400);
+    }
+  
+    &-2 {
+      @include calculateItemSizeVW(357, 357, 1400);
+    }
+  
+    &-3 {
+      @include calculateItemSizeVW(682, 682, 1400);
+    }
+  
+    &-4 {
+      @include calculateItemSizeVW(357, 357, 1400);
+    }
+  
+    &-7 {
+      @include calculateItemSizeVH(450, 450, 1600);
+    }
+
+    &-8 {
+      @include calculateItemSizeVH(430, 430, 1600);
+    }
+  }
+}

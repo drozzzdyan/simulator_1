@@ -1,0 +1,44 @@
+@mixin resetMargins {
+  margin: 0;
+}
+
+@mixin resetOutline {
+  outline: none;
+  -moz-outline: none;
+}
+
+@mixin font() {
+  font-family: var(--font-main);
+}
+
+@mixin fontProperty($size, $lHeight, $weight: 400, $color: #fff, $align: center) {
+  font-size: $size;
+  line-height: $lHeight;
+  font-weight: $weight;
+  color: $color;
+  text-align: $align;
+}
+
+@mixin calculateItemSizeVW($width, $height, $templateWidth: 1920) {
+  width: calc($width / $templateWidth) * 100vw;
+  height: calc($width / $templateWidth) * calc($height / $width) * 100vw;
+}
+
+@mixin calculateItemSizeVH($width, $height, $templateHeight: 1080) {
+  width: calc($height / $templateHeight) * calc($width / $height) * 100vh;
+  height: calc($height / $templateHeight) * 100vh;
+}
+
+@mixin calculateMarginsToVH($top: 0, $bottom: 0, $left: 0, $right: 0, $templateHeight: 1080) {
+  margin-top: calc($top / $templateHeight) * 100vh;
+  margin-bottom: calc($bottom / $templateHeight) * 100vh;
+  margin-left: calc($left / $templateHeight) * 100vh;
+  margin-right: calc($right / $templateHeight) * 100vh;
+}
+
+@mixin calculatePaddingsToVH($top: 0, $bottom: 0, $left: 0, $right: 0, $templateHeight: 1080) {
+  padding-top: calc($top / $templateHeight) * 100vh;
+  padding-bottom: calc($bottom / $templateHeight) * 100vh;
+  padding-left: calc($left / $templateHeight) * 100vh;
+  padding-right: calc($right / $templateHeight) * 100vh;
+}

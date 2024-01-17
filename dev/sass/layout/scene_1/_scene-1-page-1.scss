@@ -1,0 +1,134 @@
+.scene-1-page-1 {
+  &-header {
+    width: 75%;
+    margin-bottom: 3vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 3.7vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-left {
+    position: relative;
+    width: 46%;
+    background-image: url("./../images/abstraction_dec_left_type_5@2x.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  &-board-right {
+    position: relative;
+    z-index: 2;
+    width: 54%;
+    padding-top: 3vh;
+    padding-right: 2vw;
+  }
+
+  &-svg {
+    position: absolute;
+    left: 18%;
+    bottom: 3%;
+    z-index: 2;
+    @include calculateItemSizeVH(436, 553);
+    max-height: 90%;
+    animation: 5s linear 0s infinite grandmom-ride;
+  }
+
+  @keyframes grandmom-ride {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(2%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-2%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  &-cell-line {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+  }
+
+  &-cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1.5vmin;
+    background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
+    box-shadow:
+      0.2vh 0.3vh 1vh 0vh #070709 inset,
+      -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
+  }
+
+  &-cell:first-child {
+    margin-right: 1.3vw;
+  }
+
+  &-cell-mini {
+    flex-grow: 1;
+  }
+
+  &-cell-big {
+    flex-grow: 9;
+  }
+
+  &-cell-ico {
+    flex-shrink: 0;
+    @include calculateItemSizeVH(110, 130);
+  }
+
+  &-descr-wrapper {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vw;
+  }
+
+  &-board-header {
+    margin-bottom: 1vh;
+  }
+
+  &-board-list {
+    margin: 0;
+    margin-bottom: 1vh;
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-1 {
+    &-header {
+      width: 100%;
+      font-size: 4.4vmin;
+    }
+
+    &-board-left {
+      width: 32%;
+      background-position: center;
+    }
+
+    &-board-right {
+      width: 68%;
+    }
+
+    &-svg {
+      @include calculateItemSizeVH(436, 553, 1800);
+    }
+  }
+}
