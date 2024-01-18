@@ -1771,7 +1771,7 @@ p {
 @media (max-aspect-ratio: 7/4) {
   .scene-1-page-7-4-header {
     width: 100%;
-    font-size: 3.8vmin;
+    font-size: 3.5vmin;
   }
   .scene-1-page-7-4-board-mid-1 {
     grid-template-columns: repeat(auto-fill, minmax(5.2vw, 1fr));
