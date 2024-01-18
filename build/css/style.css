@@ -3190,6 +3190,33 @@ p {
   height: 62.4074074074vh;
   z-index: 9;
 }
+.scene-2-page-8-2__right-small-ball {
+  position: absolute;
+  top: 42%;
+  left: 35%;
+  opacity: 0;
+  width: 5.4%;
+  height: 7.7%;
+  animation: animbuble 4s linear infinite 1.5s;
+}
+.scene-2-page-8-2__right-medium-ball {
+  position: absolute;
+  opacity: 0;
+  top: 34%;
+  left: 27%;
+  width: 8%;
+  height: 11%;
+  animation: animbuble2 4s linear infinite 1.5s;
+}
+.scene-2-page-8-2__right-text-ball {
+  position: absolute;
+  opacity: 0;
+  width: 54%;
+  height: 82.2%;
+  left: 2%;
+  top: -18%;
+  animation: animbuble3 4s linear infinite 1.5s;
+}
 
 @media (max-aspect-ratio: 7/5) {
   .scene-2-page-8-2-svg {
