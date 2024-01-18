@@ -75,6 +75,14 @@
     animation: animGpampsClose 2s linear infinite;
   }
 
+  &-board-note {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 30%;
+    font-size: 1.4vmin;
+  }
+
 }
 
 

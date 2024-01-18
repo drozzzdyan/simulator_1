@@ -2426,6 +2426,13 @@ p {
 .scene-2-page-6-3__close {
   animation: animGpampsClose 2s linear infinite;
 }
+.scene-2-page-6-3-board-note {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: 30%;
+  font-size: 1.4vmin;
+}
 
 @keyframes animGpampsOpen {
   0% {
@@ -2443,6 +2450,11 @@ p {
     z-index: 9;
   }
 }
+.scene-2-page-6-4 .header {
+  margin-bottom: 2vh;
+  width: 70%;
+}
+
 .scene-2-page-7-1-header {
   width: 99%;
   margin-bottom: 2vh;
