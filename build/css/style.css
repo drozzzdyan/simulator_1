@@ -1658,7 +1658,7 @@ p {
 }
 .scene-1-page-7-4-header {
   width: 92%;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
 }
 .scene-1-page-7-4-header-year {
   font-size: 3vmin;
@@ -1669,7 +1669,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  padding-bottom: 11vh;
+  padding-bottom: 2vh;
 }
 .scene-1-page-7-4-board {
   position: relative;
@@ -1677,6 +1677,7 @@ p {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 2vh;
   padding: 2vh;
   border-radius: 1vmin;
   background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
@@ -1684,7 +1685,7 @@ p {
 .scene-1-page-7-4-board-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   padding: 2vh;
   border-radius: 1.5vmin;
   background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
@@ -1693,14 +1694,33 @@ p {
 .scene-1-page-7-4-board-mid {
   flex-grow: 1;
 }
+.scene-1-page-7-4-board-mid-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.3vh, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1vh;
+  grid-row-gap: 1vh;
+  justify-content: center;
+  align-items: center;
+  padding-right: 13%;
+  padding-left: 2%;
+}
+.scene-1-page-7-4-board-mid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4.1vh, 1fr));
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0.6vh;
+  grid-row-gap: 0.6vh;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1%;
+  padding-left: 2%;
+}
 .scene-1-page-7-4-board-right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   padding-left: 1vw;
-}
-.scene-1-page-7-4-board:first-child {
-  margin-bottom: 1.5vh;
 }
 .scene-1-page-7-4-board-left-header {
   margin-bottom: 2vh;
@@ -1712,11 +1732,65 @@ p {
 .scene-1-page-7-4-board-right-descr {
   text-align: right;
 }
+.scene-1-page-7-4-board-mid-1-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.2592592593vh;
+  height: 9.2592592593vh;
+  padding: 1vh;
+  border-radius: 1vmin;
+  background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
+  box-shadow: 0.2vh 0.3vh 1vh 0vh #070709 inset, -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
+}
+.scene-1-page-7-4-board-mid-2-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.1666666667vh;
+  height: 4.1666666667vh;
+  padding: 0.2vh;
+  border-radius: 0.5vmin;
+  background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
+  box-shadow: 0.2vh 0.3vh 1vh 0vh #070709 inset, -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
+}
+.scene-1-page-7-4-board-svg-hospital-1 {
+  width: 64%;
+  height: 67%;
+  fill: var(--font-color-pink);
+}
+.scene-1-page-7-4-board-svg-hospital-2 {
+  width: 64%;
+  height: 67%;
+  fill: var(--font-color-blue);
+}
+.scene-1-page-7-4-note {
+  font-size: 1.4vmin;
+}
 
-@media (max-aspect-ratio: 7/5) {
+@media (max-aspect-ratio: 7/4) {
   .scene-1-page-7-4-header {
     width: 100%;
-    font-size: 3.8vmin;
+    font-size: 3.5vmin;
+  }
+  .scene-1-page-7-4-board-mid-1 {
+    grid-template-columns: repeat(auto-fill, minmax(5.2vw, 1fr));
+    grid-column-gap: 0.7vw;
+    grid-row-gap: 0.7vw;
+    padding-right: 2%;
+  }
+  .scene-1-page-7-4-board-mid-2 {
+    grid-template-columns: repeat(auto-fill, minmax(2.3vw, 1fr));
+    grid-column-gap: 0.5vw;
+    grid-row-gap: 0.5vw;
+  }
+  .scene-1-page-7-4-board-mid-1-cell {
+    width: 5.2083333333vw;
+    height: 5.2083333333vw;
+  }
+  .scene-1-page-7-4-board-mid-2-cell {
+    width: 2.34375vw;
+    height: 2.34375vw;
   }
 }
 .scene-2-page-1 .page-container {
@@ -2965,7 +3039,7 @@ p {
 .scene-2-page-8-3-board-right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .scene-2-page-8-3-board:first-child {
   margin-bottom: 1.5vh;
@@ -3041,7 +3115,7 @@ p {
 .scene-2-page-9-1-board-right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .scene-2-page-9-1-board:first-child {
   margin-bottom: 1.5vh;
@@ -3426,7 +3500,7 @@ p {
 .scene-2-page-9-3-board-right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .scene-2-page-9-3-board:first-child {
   margin-bottom: 1.5vh;
