@@ -1,0 +1,12 @@
+.scene-2-page-8-1 {
+
+  .header {
+    margin-bottom: 3vh;
+  }
+
+  &-ico-diagram {
+    @include calculateItemSizeVH(1793, 700);
+
+
+  }
+}

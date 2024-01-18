@@ -1,4 +1,4 @@
-.scene-2-page-9-1 {
+.scene-2-page-9-3 {
   &-header {
     width: 92%;
     margin-bottom: 3vh;
@@ -6,11 +6,11 @@
 
 
   &-ico-blue {
-    @include calculateItemSizeVH(1253, 210);
+    @include calculateItemSizeVH(760, 210);
   }
 
   &-ico-pink {
-    @include calculateItemSizeVH(980, 210);
+    @include calculateItemSizeVH(1310, 210);
   }
 
   &-body {
@@ -77,12 +77,7 @@
   &__notice {
     margin-top: 1.759vmin;
     margin-bottom: 1.759vmin;
-    @include fontProperty(1.389vmin, 1.2, 400, #fff, left);
-
-    &>a {
-      color: #fff;
-      text-decoration: underline;
-    }
+    @include fontProperty(1.389vmin, 1.2, 400, #fff, left)
   }
 
   // &-svg-sheme {
@@ -92,7 +87,7 @@
 }
 
 @media (max-aspect-ratio: 7/5) {
-  .scene-2-page-9-1 {
+  .scene-2-page-9-3 {
     &-header {
       width: 100%;
       font-size: 3.8vmin;
