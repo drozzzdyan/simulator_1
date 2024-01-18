@@ -1,0 +1,99 @@
+.scene-2-page-7-4 {
+  &-header {
+    width: 87%;
+    margin-bottom: 3vh;
+  }
+
+
+  &-ico-blue {
+    @include calculateItemSizeVH(1253, 210);
+  }
+
+  &-ico-pink {
+    @include calculateItemSizeVH(980, 210);
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 4vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2vh;
+    border-radius: 1vmin;
+    gap: 3vh;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2vh;
+    border-radius: 1.5vmin;
+    background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
+    box-shadow:
+      0.2vh 0.3vh 1vh 0vh #070709 inset,
+      -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
+  }
+
+  &-board-mid {
+    flex-grow: 1;
+  }
+
+  &-board-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+  }
+
+  &-board:first-child {
+    margin-bottom: 1.5vh;
+  }
+
+  &-board-left-header {
+    margin-bottom: 2vh;
+  }
+
+  &-board-svg-pills {
+    @include calculateItemSizeVH(272, 110);
+
+  }
+
+  &-board-right-descr {
+    text-align: right;
+  }
+
+
+  &__notice {
+    margin-top: 1.759vmin;
+    margin-bottom: 1.759vmin;
+    @include fontProperty(1.389vmin, 1.2, 400, #fff, left);
+
+    &>a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-2-page-7-4 {
+    &-header {
+      width: 100%;
+      font-size: 3.8vmin;
+    }
+
+  }
+}

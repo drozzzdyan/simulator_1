@@ -1,0 +1,99 @@
+.scene-2-page-7-3 {
+  &-header {
+    width: 92%;
+    margin-bottom: 3vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 3.7vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-left {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 38%;
+    padding: 4vh;
+    background-image: url("./../images/abstraction_dec_scene_1_page_7_3@2x.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &-board-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62%;
+  }
+
+  &-board-header {
+    margin-bottom: 4vh;
+  }
+
+  &-plates {}
+
+  &-plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include calculateItemSizeVH(380, 80);
+    margin-bottom: 4vh;
+    padding: 1vh;
+    border-radius: 1vmin;
+  }
+
+  &-plate-1 {
+    background-color: var(--scene-1-page-7-3-plate-1-bg);
+  }
+
+  &-plate-2 {
+    background-color: var(--scene-1-page-7-3-plate-2-bg);
+  }
+
+  &-plate-3 {
+    background-color: var(--scene-1-page-7-3-plate-3-bg);
+  }
+
+  &-svg-sheme {
+    @include calculateItemSizeVH(972, 598);
+    max-height: 93%;
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-2-page-7-3 {
+    &-header {
+      width: 100%;
+      font-size: 3.8vmin;
+    }
+
+    &-board-left {
+      width: 40%;
+    }
+
+    &-board-right {
+      width: 60%;
+    }
+
+    &-board-header {
+      font-size: 2.8vmin;
+    }
+
+    &-plate {
+      @include calculateItemSizeVH(380, 80, 1300);
+      font-size: 2vmin;
+    }
+  }
+}
