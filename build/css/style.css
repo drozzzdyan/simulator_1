@@ -1839,6 +1839,7 @@ p {
 .scene-2-page-1__anim-open {
   animation: animClose 1s linear infinite;
 }
+
 @keyframes animOpen {
   0% {
     height: auto;
@@ -1855,7 +1856,6 @@ p {
     height: auto;
   }
 }
-
 @media (max-aspect-ratio: 7/4) {
   .scene-2-page-1-header {
     width: 100%;
@@ -2363,6 +2363,84 @@ p {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+.scene-2-page-6-3 .header {
+  margin-bottom: 2vh;
+  width: 70%;
+}
+.scene-2-page-6-3 .page-body {
+  width: 100%;
+  margin-bottom: 3vh;
+}
+.scene-2-page-6-3 .circle-dec-7 {
+  left: auto;
+  right: 0;
+  z-index: -1;
+}
+.scene-2-page-6-3__bg {
+  border-radius: 10px;
+  border: 1.5px solid #323465;
+  background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
+  -webkit-backdrop-filter: blur(22px);
+          backdrop-filter: blur(22px);
+  display: flex;
+}
+.scene-2-page-6-3__left {
+  padding: 3.426vmin 1.296vmin;
+  width: 62%;
+  position: relative;
+}
+.scene-2-page-6-3__left-svg {
+  width: 100%;
+  height: 100%;
+}
+.scene-2-page-6-3__right {
+  position: relative;
+  width: 38%;
+  background-image: url(./../images/abstraction-scene-2-page-6-3-right.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.scene-2-page-6-3__right-comment {
+  position: absolute;
+  right: -11%;
+  top: 38%;
+  width: 37%;
+  height: 52%;
+}
+.scene-2-page-6-3__animation {
+  display: flex;
+  justify-content: end;
+}
+.scene-2-page-6-3__right_grapms1 {
+  width: 88%;
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.scene-2-page-6-3__open {
+  animation: animGpampsOpen 2s linear infinite;
+}
+.scene-2-page-6-3__close {
+  animation: animGpampsClose 2s linear infinite;
+}
+
+@keyframes animGpampsOpen {
+  0% {
+    z-index: 9;
+  }
+  100% {
+    z-index: 0;
+  }
+}
+@keyframes animGpampsClose {
+  0% {
+    z-index: 0;
+  }
+  100% {
+    z-index: 9;
   }
 }
 .scene-2-page-7-1-header {
