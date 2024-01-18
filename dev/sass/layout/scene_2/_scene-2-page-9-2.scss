@@ -45,50 +45,10 @@
     box-shadow: 1.661px 2.491px 8.303px 0px #070709 inset, -1.661px -1.661px 8.303px 0px rgba(255, 255, 255, 0.05) inset;
   }
 
-  &__top-one-text {
-    @include fontProperty(3.372vmin, 1.2, 700, var(--font-color-pink), left);
 
-  }
 
-  &__top-text-color {
-    @include fontProperty(2.107vmin, 1.2, 700, var(--font-color-pink), center)
-  }
 
-  &__top-two-item {
-    flex-grow: 1;
 
-  }
-
-  &__top {
-    display: flex;
-    gap: 1.054vmin;
-    margin-bottom: 1.054vmin;
-  }
-
-  &__top-one {
-    display: flex;
-    align-items: center;
-    width: 37%;
-  }
-
-  &__top-two {
-    display: flex;
-    flex-direction: column;
-    gap: 1.054vmin;
-    width: 31.5%;
-  }
-
-  &__top-three {
-    display: flex;
-    flex-direction: column;
-    gap: 1.054vmin;
-    width: 31.5%;
-  }
-
-  &__items {
-    display: flex;
-    gap: 1.054vmin;
-  }
 
   &__left-bg {
     border-radius: 10px;
@@ -102,80 +62,6 @@
 
 
 
-  &__two {
-    display: flex;
-    gap: 1.054vmin;
-    margin-bottom: 1.054vmin;
-  }
-
-  &__three {
-    display: flex;
-    gap: 1.054vmin;
-  }
-
-  &__middle-one {
-    width: 37%;
-  }
-
-  &__middle-two {
-    width: 31.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.5vmin;
-  }
-
-  &__middle-three {
-    width: 31.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.5vmin;
-
-
-  }
-
-  &__middle-wrap-block {
-    display: flex;
-    gap: 4.215vmin;
-    justify-content: space-around;
-
-    &:last-child {
-      .scene-2-page-9-2__middle-count::after {
-        display: none;
-      }
-    }
-  }
-
-  &__middle-count {
-    // flex-basis: 11.275vmin;
-
-    position: relative;
-    @include fontProperty(2.107vmin, 1, 400, #fff, center);
-
-    &::after {
-      position: absolute;
-      content: '';
-      bottom: 0;
-      left: 50%;
-      width: 5vmin;
-      margin-left: -2.5vmin;
-      border-bottom: 1px solid #fff;
-
-
-    }
-
-  }
-
-  &__middle-one-list {
-    padding: 0 0 0 3vmin;
-    margin: 0;
-  }
-
-  &__middle-one-list-item {
-    margin-bottom: 0.5vmin;
-    @include fontProperty(2.107vmin, 1, 400, #fff, left);
-  }
 
 
 
@@ -186,9 +72,7 @@
   &__right-bg {
     border-radius: 10px;
     border: 1.5px solid #323465;
-
     background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
-
     backdrop-filter: blur(22px);
   }
 
@@ -206,7 +90,7 @@
   }
 
   &__middle-one-text {
-    @include fontProperty(3vmin, 1, 700, var(--second-screen-color), left);
+    @include fontProperty(1.563vmax, 1, 700, var(--second-screen-color), left);
     margin-bottom: 1.370vmin;
   }
 
@@ -329,18 +213,7 @@
       padding: 1.5vmin;
     }
 
-    &__top-one-text {
-      font-size: 2.372vmin;
-    }
 
-    &__middle-one-text {
-      font-size: 2vmin;
-
-    }
-
-    &__top-text-color {
-      font-size: 1.4vmin;
-    }
 
     &__left {
       width: 60%;
@@ -351,14 +224,7 @@
       width: 40%;
     }
 
-    &__middle-one-list-item {
-      font-size: 1.2vmin;
-    }
 
-    &__middle-count {
-      font-size: 1.2vmin;
-
-    }
 
     &__right-title {
       font-size: 2.8vmin;
