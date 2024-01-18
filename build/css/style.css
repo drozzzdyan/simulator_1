@@ -2454,6 +2454,35 @@ p {
   margin-bottom: 2vh;
   width: 70%;
 }
+.scene-2-page-6-4 .page-body {
+  width: 100%;
+}
+.scene-2-page-6-4__bg {
+  display: flex;
+  border-radius: 10px;
+  border: 1.5px solid #323465;
+  background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
+  -webkit-backdrop-filter: blur(22px);
+          backdrop-filter: blur(22px);
+}
+.scene-2-page-6-4__left-svg {
+  width: 100%;
+  height: 100%;
+}
+.scene-2-page-6-4__left {
+  width: 47.214%;
+  padding: 1.667vmin 3.519vmin;
+}
+.scene-2-page-6-4__right {
+  width: 52.786%;
+  position: relative;
+  background-image: url(../images/scene-2-page-6-4__right-bg@2x.png);
+  background-size: cover;
+  background-position: top right;
+}
+.scene-2-page-6-4-board-note {
+  width: 94%;
+}
 
 .scene-2-page-7-1-header {
   width: 99%;
