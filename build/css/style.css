@@ -2439,6 +2439,10 @@ p {
     transform: rotate(0deg);
   }
 }
+.scene-2-page-6-3 .page-container {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
 .scene-2-page-6-3 .header {
   margin-bottom: 2vh;
   width: 70%;
@@ -2554,10 +2558,147 @@ p {
   background-size: cover;
   background-position: top right;
 }
+.scene-2-page-6-4__right-animation-block {
+  height: 83%;
+}
+.scene-2-page-6-4__right-small-ball {
+  opacity: 0;
+  width: 5.4%;
+  height: 7.7%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  animation: animbuble 6s linear infinite 3s;
+}
+.scene-2-page-6-4__right-medium-ball {
+  opacity: 0;
+  position: absolute;
+  top: 18%;
+  left: 28%;
+  width: 8%;
+  height: 11%;
+  animation: animbuble2 6s linear infinite 3s;
+}
+.scene-2-page-6-4__right-text-ball {
+  opacity: 0;
+  width: 54%;
+  height: 82.2%;
+  position: relative;
+  left: 24%;
+  top: 13%;
+  animation: animbuble3 6s linear infinite 3s;
+}
 .scene-2-page-6-4-board-note {
   width: 94%;
+  position: absolute;
+  bottom: 12px;
+}
+.scene-2-page-6-4 .descr {
+  font-size: 0.677vmax;
 }
 
+@keyframes animbuble {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animbuble2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animbuble3 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.scene-2-page-6-5 .header {
+  margin-bottom: 3vh;
+  width: 76%;
+}
+.scene-2-page-6-5 .page-body {
+  width: 100%;
+}
+.scene-2-page-6-5-text-svg {
+  width: 100%;
+  height: 65.2777777778vh;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.scene-2-page-6-6-btn {
+  width: 49.556vmin;
+  padding: 3vh 3vh;
+}
+.scene-2-page-6-6 .header {
+  max-width: 76.926vmin;
+}
+.scene-2-page-6-6 .page-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6vh;
+  width: 100%;
+  position: relative;
+}
+.scene-2-page-6-6-svg-amin {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.scene-2-page-6-6-svg {
+  width: 24.74%;
+  height: 66.5%;
+}
+.scene-2-page-6-6-svg-amin-one {
+  animation: animOpen 1s linear infinite;
+}
+.scene-2-page-6-6-svg-amin-two {
+  animation: animClose 1s linear infinite;
+}
+
+@keyframes finalScreen1 {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes finalScreen2 {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 .scene-2-page-7-1-header {
   width: 99%;
   margin-bottom: 2vh;

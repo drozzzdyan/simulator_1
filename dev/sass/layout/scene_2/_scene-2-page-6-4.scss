@@ -39,10 +39,103 @@
     background-position: top right;
   }
 
+  &__right-animation-block {
+    height: 83%;
+  }
+
+  &__right-small-ball {
+    opacity: 0;
+    // @include calculateItemSizeVH(50, 48);
+    width: 5.4%;
+    height: 7.7%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    animation: animbuble 6s linear infinite 3s;
+  }
+
+  &__right-medium-ball {
+    opacity: 0;
+    // @include calculateItemSizeVH(75, 68);
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    width: 8%;
+    height: 11%;
+    animation: animbuble2 6s linear infinite 3s;
+  }
+
+  &__right-text-ball {
+    opacity: 0;
+    // @include calculateItemSizeVH(582, 582);
+    width: 54%;
+    height: 82.2%;
+    position: relative;
+    left: 24%;
+    top: 13%;
+    animation: animbuble3 6s linear infinite 3s;
+  }
+
   &-board-note {
 
     width: 94%;
-
+    position: absolute;
+    bottom: 12px;
   }
 
+  .descr {
+    font-size: 0.677vmax;
+  }
+
+}
+
+@keyframes animbuble {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animbuble2 {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animbuble3 {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

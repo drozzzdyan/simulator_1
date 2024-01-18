@@ -1,0 +1,67 @@
+.scene-2-page-6-6 {
+  &-btn {
+    width: 49.556vmin;
+    padding: 3vh 3vh;
+  }
+
+  .header {
+    max-width: 76.926vmin;
+  }
+
+  .page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    width: 100%;
+    position: relative;
+  }
+
+  &-svg-amin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-svg {
+    width: 24.74%;
+    height: 66.5%;
+  }
+
+  &-svg-amin-one {
+
+    animation: animOpen 1s linear infinite;
+  }
+
+  &-svg-amin-two {
+
+    animation: animClose 1s linear infinite;
+
+  }
+}
+
+@keyframes finalScreen1 {
+  0% {
+    visibility: visible;
+  }
+
+
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes finalScreen2 {
+  0% {
+    visibility: hidden;
+  }
+
+
+
+  100% {
+    visibility: visible;
+
+  }
+}
