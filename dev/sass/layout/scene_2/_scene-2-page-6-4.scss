@@ -1,0 +1,141 @@
+.scene-2-page-6-4 {
+
+
+  .header {
+    margin-bottom: 2vh;
+    width: 70%;
+  }
+
+  .page-body {
+    width: 100%;
+  }
+
+  &__bg {
+    display: flex;
+    border-radius: 10px;
+    border: 1.5px solid #323465;
+    background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
+    backdrop-filter: blur(22px);
+
+
+  }
+
+  &__left-svg {
+    // @include calculateItemSizeVH(805, 615)
+    width: 100%;
+    height: 100%;
+  }
+
+  &__left {
+    width: 47.214%;
+    padding: 1.667vmin 3.519vmin;
+  }
+
+  &__right {
+    width: 52.786%;
+    position: relative;
+    background-image: url(../images/scene-2-page-6-4__right-bg@2x.png);
+    background-size: cover;
+    background-position: top right;
+  }
+
+  &__right-animation-block {
+    height: 83%;
+  }
+
+  &__right-small-ball {
+    opacity: 0;
+    // @include calculateItemSizeVH(50, 48);
+    width: 5.4%;
+    height: 7.7%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    animation: animbuble 6s linear infinite 3s;
+  }
+
+  &__right-medium-ball {
+    opacity: 0;
+    // @include calculateItemSizeVH(75, 68);
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    width: 8%;
+    height: 11%;
+    animation: animbuble2 6s linear infinite 3s;
+  }
+
+  &__right-text-ball {
+    opacity: 0;
+    // @include calculateItemSizeVH(582, 582);
+    width: 54%;
+    height: 82.2%;
+    position: relative;
+    left: 24%;
+    top: 13%;
+    animation: animbuble3 6s linear infinite 3s;
+  }
+
+  &-board-note {
+
+    width: 94%;
+    position: absolute;
+    bottom: 12px;
+  }
+
+  .descr {
+    font-size: 0.677vmax;
+  }
+
+}
+
+@keyframes animbuble {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animbuble2 {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animbuble3 {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

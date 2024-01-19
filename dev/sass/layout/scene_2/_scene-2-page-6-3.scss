@@ -1,0 +1,116 @@
+.scene-2-page-6-3 {
+
+  .page-container {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .header {
+    margin-bottom: 2vh;
+    width: 70%;
+  }
+
+  .page-body {
+    width: 100%;
+    margin-bottom: 3vh;
+  }
+
+  .circle-dec-7 {
+    left: auto;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__bg {
+    border-radius: 10px;
+    border: 1.5px solid #323465;
+    background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
+    backdrop-filter: blur(22px);
+    display: flex;
+  }
+
+  &__left {
+    padding: 3.426vmin 1.296vmin;
+    width: 62%;
+    position: relative;
+  }
+
+  &__left-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__right {
+    position: relative;
+    width: 38%;
+    background-image: url(./../images/abstraction-scene-2-page-6-3-right.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  &__right-comment {
+    position: absolute;
+    right: -11%;
+    top: 38%;
+    width: 37%;
+    height: 52%;
+  }
+
+  &__animation {
+    // height: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  &__right_grapms1 {
+    // @include calculateItemSizeVH(598, 635);
+    width: 88%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  &__open {
+    animation: animGpampsOpen 2s linear infinite;
+  }
+
+  &__close {
+    animation: animGpampsClose 2s linear infinite;
+  }
+
+  &-board-note {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 30%;
+    font-size: 1.4vmin;
+  }
+
+}
+
+
+@keyframes animGpampsOpen {
+  0% {
+    // height: auto;
+    z-index: 9;
+  }
+
+  100% {
+    // height: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes animGpampsClose {
+  0% {
+    // height: 0;
+    z-index: 0;
+  }
+
+  100% {
+    // height: auto;
+    z-index: 9;
+  }
+}
