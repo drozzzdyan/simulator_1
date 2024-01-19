@@ -10,7 +10,8 @@
     margin-top: 5.926vmin;
     background-image: url(../images/scene-2-page-4-spinner.svg);
     background-size: cover;
-    @include calculateItemSizeVH(1104, 629)
+    @include calculateItemSizeVH(1104, 629);
+    margin-bottom: 2vh;
   }
 
   &__text {
