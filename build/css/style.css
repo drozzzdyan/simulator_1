@@ -2304,6 +2304,46 @@ p {
     height: 2.34375vw;
   }
 }
+.scene-1-page-9-1-header {
+  width: 76%;
+  margin-bottom: 5vh;
+}
+.scene-1-page-9-1-header-year {
+  font-size: 3vmin;
+  font-weight: 400;
+}
+.scene-1-page-9-1-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 2vh;
+}
+.scene-1-page-9-1-board {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2vh;
+  border-radius: 1vmin;
+  background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+}
+.scene-1-page-9-1-svg-sheme {
+  width: 98%;
+}
+.scene-1-page-9-1-note {
+  font-size: 1.4vmin;
+}
+
+@media (max-aspect-ratio: 7/4) {
+  .scene-1-page-9-1-header {
+    width: 100%;
+    font-size: 3.5vmin;
+  }
+}
 .scene-2-page-1 .page-container {
   padding-top: 2.703704vh;
   padding-bottom: 2.703704vh;
