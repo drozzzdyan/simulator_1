@@ -72,6 +72,12 @@ function setInteractivePage3() {
   })
 }
 
+function setAnimationPage96() {
+  setInterval(() => {
+    document.querySelector('.scene-1-page-9-6-svg-grandmom').classList.toggle('mirror');
+  }, 800);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   calculateMinHeight();
   createBackgroundAnimation();
@@ -79,4 +85,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setBtnControl();
 
   setInteractivePage3();
+  setAnimationPage96();
 })

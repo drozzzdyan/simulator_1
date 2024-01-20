@@ -1,0 +1,35 @@
+.scene-1-page-9-6 {
+  &-logo {
+    margin-bottom: 15vh;
+  }
+
+  &-header {
+    width: 55%;
+    margin-bottom: 7vh;
+  }
+
+  &-svg-grandmom {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    @include calculateItemSizeVH(452, 592);
+  }
+
+  &-svg-grandmom.mirror {
+    transform: matrix(-1, 0, 0, 1, 1, 0);
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-9-6 {
+    &-logo {
+      margin-bottom: 10vh;
+    }
+  
+    &-header {
+      width: 75%;
+      margin-bottom: 5vh;
+      font-size: 5vh;
+    }
+  }
+}

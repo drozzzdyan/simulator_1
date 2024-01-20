@@ -2875,6 +2875,34 @@ p {
     width: 88%;
   }
 }
+.scene-1-page-9-6-logo {
+  margin-bottom: 15vh;
+}
+.scene-1-page-9-6-header {
+  width: 55%;
+  margin-bottom: 7vh;
+}
+.scene-1-page-9-6-svg-grandmom {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 41.8518518519vh;
+  height: 54.8148148148vh;
+}
+.scene-1-page-9-6-svg-grandmom.mirror {
+  transform: matrix(-1, 0, 0, 1, 1, 0);
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-9-6-logo {
+    margin-bottom: 10vh;
+  }
+  .scene-1-page-9-6-header {
+    width: 75%;
+    margin-bottom: 5vh;
+    font-size: 5vh;
+  }
+}
 .scene-2-page-1 .page-container {
   padding-top: 2.703704vh;
   padding-bottom: 2.703704vh;
