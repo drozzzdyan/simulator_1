@@ -1,7 +1,15 @@
 .scene-2-page-6-2 {
   .header {
-    width: 70%;
+    width: 80%;
     margin-bottom: 2vh;
+  }
+
+  &-board-note {
+    position: absolute;
+    bottom: -24%;
+    right: 0;
+    width: 30%;
+    font-size: 1.4vmin;
   }
 
   .page-body {
@@ -71,6 +79,10 @@
       height: 36.259259vh;
     }
 
+    &-board-note {
+      bottom: -25%;
+      width: 25%;
+    }
   }
 }
 

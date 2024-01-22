@@ -52,10 +52,11 @@
 
   &__right-comment {
     position: absolute;
-    right: -11%;
-    top: 38%;
-    width: 37%;
-    height: 52%;
+    right: -7%;
+    top: 2%;
+    width: 33%;
+    height: 48%;
+
   }
 
   &__animation {
@@ -82,14 +83,22 @@
 
   &-board-note {
     position: absolute;
-    bottom: -15%;
-    left: 0;
+    bottom: -11%;
+    right: 0;
     width: 30%;
     font-size: 1.4vmin;
   }
 
 }
 
+@media (max-aspect-ratio: 7/4) {
+  .scene-2-page-6-3 {
+
+    &-board-note {
+      width: 25%;
+    }
+  }
+}
 
 @keyframes animGpampsOpen {
   0% {
