@@ -5015,10 +5015,10 @@ p {
   transition: color 0.3s ease-in-out;
 }
 .scene-3-page-3-board-line.selected .scene-3-page-3-board-ico {
-  fill: var(--font-color-blue);
+  fill: var(--font-color-pink);
 }
 .scene-3-page-3-board-line.selected .scene-3-page-3-board-subheader {
-  color: var(--font-color-blue);
+  color: var(--font-color-pink);
 }
 .scene-3-page-3-svg {
   position: absolute;
