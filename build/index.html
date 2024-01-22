@@ -3941,46 +3941,254 @@
     <!-- subpage  scene-2-page-9-2-->
 
 
-
-
-
-
-
-
-    <!-- 
-      Шаблон секции:
-      Если необходимо добавить собственные кастомные стили на слайд, то делаем их с приставкой
-      scene-1-page-2, например как на слайде выше, стили кладём в соответсвующую папку ветки
-    -->
-    <section class="page scene-1-page-2" id="scene-1-page-2">
-      <!-- Контейнер страницы -->
+    <!-- ////////////// scene 3 -->
+    <section class="page scene-3-page-1 " id="scene-3-page-1">
       <div class="page-container">
-        <!-- Общие стили заголовков можно найти в base/_base.scss, там же и остальные общие стили -->
-        <h2 class="header">
-          Заголовок
+        <h2 class="header scene-3-page-1-header">
+          Молодой, активный пациент с&nbsp;медленно
+          прогрессирующим течением заболевания
         </h2>
-        <!-- Сюда суёшь наполнение любое -->
-        <div class="page-body">
-          <!-- Например текстик -->
-          <p class="descr">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime voluptates corrupti explicabo accusamus, eius atque natus ex, illum facilis reiciendis iste vero, assumenda velit optio eveniet earum animi. Modi?
-          </p>
-        </div>
-        <!-- 
-          Кнопка управления страницами (должна иметь специальный класс js-btn-control для работы скрипта):
-          data-target-open - указать id открываемой страницы
-          data-target-close - указать id закрываемой страницы (не забыть!)
-          data-decoration - указать тип декорации, которая должна быть активирована (если декораци не нужна, просто не указываем её)
+        <div class="scene-3-page-1-board">
+          <div class="scene-3-page-1-board-left">
+            <div class="circle-dec-7"></div>
+            <div class="scene-2-page-1__anim-block">
 
-          Класс btn - стилевой класс для кнопок управления
-        -->
-        <button class="btn-reset btn js-btn-control" data-target-open="scene-2-page-9-3" data-target-close="scene-2-page-6-1" data-decoration="0">
+              <img class="scene-3-page-1__anim-close scene-3-page-1__anim-img" src="images/scene-3-page-1girl.png" alt="">
+              <img class="scene-3-page-1__anim-open scene-3-page-1__anim-img" src="images/scene-3-page-1girl2.png" alt="">
+            </div>
+          </div>
+          <div class="scene-3-page-1-board-right">
+            <div class="scene-3-page-1-cell-line">
+              <div class="scene-3-page-1-cell scene-3-page-1-cell-mini">
+                <svg class="scene-3-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_person"></use>
+                </svg>
+                <div class="scene-3-page-1-descr-wrapper">
+                  <p class="descr descr-bold descr-pink">
+                    Возраст
+                  </p>
+                  <p class="descr">
+                    58&nbsp;лет
+                  </p>
+                </div>
+              </div>
+              <div class="scene-3-page-1-cell scene-3-page-1-cell-big">
+                <svg class="scene-3-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_prescription"></use>
+                </svg>
+                <div class="scene-3-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-pink descr-bold">Диагноз</span> множественная миелома
+                    был поставлен 3 года назад
+                  </p>
+                </div>
+              </div>
+              <div class="scene-3-page-1-cell scene-3-page-1-cell-mini">
+                <svg class="scene-3-page-1-cell-ico">
+                  <use xlink:href="images/symbol/sprite.svg#ico_ok"></use>
+                </svg>
+                <div class="scene-3-page-1-descr-wrapper">
+                  <p class="descr">
+                    <span class="descr-pink descr-bold">ECOG:</span> 0
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="header-smallest header-pink header-left scene-3-page-1-board-header">
+              Сопутствующие заболевания:
+            </h3>
+            <ul class="descr scene-3-page-1-board-list">
+              <li>
+                Гипертоническая болезнь 2-й стадии
+              </li>
+              <li>
+                Гипертрофия левого желудочка
+              </li>
+              <li>
+                Периферическая ПН 1-й степени
+              </li>
+
+            </ul>
+            <h3 class="header-smallest header-pink header-left scene-3-page-1-board-header">
+              Предыдущие схемы терапии:
+            </h3>
+            <ul class="descr scene-3-page-1-board-list">
+              <li>
+                Лечение VCD: 6&nbsp;курсов, достигнут ОХЧО (НР&nbsp;&mdash; полинейропатия 2-й степени)
+              </li>
+              <li>
+                Проведена ауто-ТСК с&nbsp;улучшением ответа до&nbsp;ПО (поддерживающая терапия леналидомидом в&nbsp;течение года с&nbsp;сохранением ответа)
+              </li>
+              <li>
+                Длительность ответа&nbsp;&mdash; 2,5 года
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-3-page-2" data-target-close="scene-3-page-1" data-decoration="2">
           <svg class="btn-arrow">
             <use xlink:href="images/symbol/sprite.svg#arrow"></use>
           </svg>
         </button>
       </div>
     </section>
+
+
+    <section class="page scene-3-page-2 " id="scene-3-page-2">
+      <div class="page-container">
+        <h2 class="header scene-3-page-2-header">
+          Хорошее физическое состояние (FIT)
+          +&nbsp;индолентное течение заболевания
+        </h2>
+        <h2 class="header-mid header-pink scene-3-page-2-subheader">
+          Молодой, активный пациент с&nbsp;медленно прогрессирующим течением заболевания. 1-й рецидив&nbsp;ММ
+        </h2>
+        <div class="page-body scene-3-page-2-boards">
+          <div class="scene-3-page-2-board scene-3-page-2-board-left">
+            <div class="scene-3-page-2-board-line">
+              <svg class="scene-3-page-2-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_microscope"></use>
+              </svg>
+              <h3 class="header-small header-left scene-3-page-2-board-header">
+                Результаты лабораторно-инструментальных исследований
+              </h3>
+            </div>
+
+            <div class="scene-3-page-2-board-line">
+              <div class="scene-3-page-2-board-cell scene-3-page-2-board-cell-alone">
+                <svg class="scene-3-page-2-board-line-ico">
+                  <use xlink:href="images/symbol/sprite.svg#scene-3-page-2-star"></use>
+                </svg>
+                <p class="descr scene-3-page-2-descr">
+                  <span class="descr-bold descr-pink">
+                    Hb
+                  </span>
+                  &mdash;&nbsp;110&nbsp;г/л&sbquo; появились боли в&nbsp;костях
+                </p>
+              </div>
+            </div>
+            <div class="scene-3-page-2-board-line-svg">
+              <svg class="scene-3-page-2-board-svg-bottom">
+                <use xlink:href="images/symbol/sprite.svg#arrow_top_text_1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="scene-3-page-2-board scene-3-page-2-board-right">
+            <div class="scene-3-page-2-board-line">
+              <svg class="scene-3-page-2-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_microscope"></use>
+              </svg>
+              <h3 class="header-small header-left scene-3-page-2-board-header">
+                Результаты лабораторно-инструментальных исследований
+              </h3>
+            </div>
+            <div class="scene-3-page-2-board-line">
+              <div class="scene-3-page-2-board-line">
+                <div class="scene-3-page-2-board-cell scene-3-page-2-board-cell-alone">
+                  <svg class="scene-3-page-2-board-line-ico">
+                    <use xlink:href="images/symbol/sprite.svg#ico_done"></use>
+                  </svg>
+                  <p class="descr scene-3-page-2-descr">
+                    <span class="descr-bold descr-pink">
+                      Рефрактерность к&nbsp;леналидомиду и&nbsp;бортезомибу
+                    </span>
+                    отсутствует
+                  </p>
+                </div>
+              </div>
+              <div class="scene-3-page-2-board-line">
+                <div class="scene-3-page-2-board-cell scene-3-page-2-board-cell-alone">
+                  <svg class="scene-3-page-2-board-line-ico">
+                    <use xlink:href="images/symbol/sprite.svg#scene-3-page-2-star"></use>
+                  </svg>
+                  <p class="descr scene-3-page-2-descr">
+                    <span class="descr-bold descr-pink">
+                      М-протеин
+                    </span>
+                    &mdash;
+                    12&nbsp;г/л
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="scene-3-page-2-board-line-svg">
+              <svg class="scene-3-page-2-board-svg-bottom">
+                <use xlink:href="images/symbol/sprite.svg#arrow_top_text_2"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button class="btn-reset btn js-btn-control" data-target-open="scene-3-page-3" data-target-close="scene-3-page-2">
+          определить цели терапии
+        </button>
+      </div>
+    </section>
+
+
+    <section class="page scene-3-page-3 " id="scene-3-page-3">
+      <div class="page-container">
+        <h2 class="header scene-3-page-3-header">
+          Молодой, активный пациент с&nbsp;медленно
+          прогрессирующим течением заболевания </h2>
+        <div class="page-body scene-3-page-3-board">
+          <div class="scene-3-page-3-board-left">
+            <h3 class="header-mid header-left header-pink scene-3-page-3-board-header">
+              Какие цели терапии вы&nbsp;ставите перед собой в&nbsp;данном случае?
+            </h3>
+            <div class="scene-3-page-3-board-line js-interactive-board">
+              <svg class="scene-3-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_eye"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-3-page-3-board-subheader">
+                Возможность длительного контроля заболевания
+              </h3>
+            </div>
+            <div class="scene-3-page-3-board-line js-interactive-board">
+              <svg class="scene-3-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_leaves"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-3-page-3-board-subheader">
+                Сохранение качества жизни
+              </h3>
+            </div>
+            <div class="scene-3-page-3-board-line js-interactive-board">
+              <svg class="scene-3-page-3-board-ico">
+                <use xlink:href="images/symbol/sprite.svg#ico_like"></use>
+              </svg>
+              <h3 class="header-smallest header-left scene-3-page-3-board-subheader">
+                Удобство приема
+              </h3>
+            </div>
+
+          </div>
+          <div class="scene-3-page-3-board-right">
+            <div class="circle-dec-8"></div>
+            <svg class="scene-3-page-3-svg">
+              <use xlink:href="images/symbol/sprite.svg#scene_3_page_3_girl"></use>
+            </svg>
+            <svg class="scene-3-page-3-bubble">
+              <use xlink:href="images/symbol/sprite.svg#scene_3_page_3_bubble_text"></use>
+            </svg>
+          </div>
+        </div>
+
+        <button class="btn-reset btn js-btn-show-interactive show" data-target-show=".scene-3-page-3-btn-controll" data-target-bubble=".scene-3-page-3-bubble">
+          Цели выбраны
+        </button>
+
+        <button class="btn-reset btn js-btn-control scene-3-page-3-btn-controll" data-target-open="scene-3-page-4" data-target-close="scene-3-page-3" data-decoration="1">
+          <svg class="btn-arrow">
+            <use xlink:href="images/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+
   </main>
 </body>
 
