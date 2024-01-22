@@ -17,7 +17,7 @@
 
   &__info {
     display: flex;
-    gap: 5vmax;
+    gap: 3vmax;
     justify-content: center;
     position: relative;
     align-items: center;
@@ -61,8 +61,12 @@
   &__btns_block {
     display: flex;
     align-items: center;
-    gap: 6.759vmin;
+    justify-content: space-between;
+    gap: 1.759vmin;
+    width: 92%;
+    margin-left: auto;
     margin-top: 13.981vmin;
+    margin-right: auto;
   }
 
   &__btn-controls {
@@ -72,7 +76,8 @@
   }
 
   .btn {
-    padding: 3vh 7vw;
+    padding: 3vh 2vw;
+    width: 20%;
   }
 }
 
@@ -97,38 +102,25 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1364px) {
   .scene-2-page-5 {
     &__left {
-      @include calculateItemSizeVH(626, 248)
+      width: 47.962963vh;
+      height: 18.962963vh;
     }
 
     &__right {
-      @include calculateItemSizeVH(626, 248)
+      width: 47.962963vh;
+      height: 18.962963vh;
     }
 
     &__info {
       width: 100%;
     }
 
-
-  }
-}
-
-@media (max-width: 992px) {
-  .scene-2-page-5 {
-    &__left {
-      @include calculateItemSizeVH(712, 283)
-    }
-
-    &__right {
-      @include calculateItemSizeVH(712, 283)
-    }
-
-
-
     &__text {
-      width: 74%;
+      font-size: 2.2vmin;
     }
+
   }
 }

@@ -1,6 +1,6 @@
 .scene-2-page-8-3 {
   &-header {
-    width: 92%;
+    width: 82%;
     margin-bottom: 5vh;
   }
 
@@ -53,19 +53,19 @@
     grid-row-gap: 0.6vh;
     justify-content: center;
     align-items: center;
-    padding-right: 18%;
+    padding-right: 25%;
     padding-left: 1%;
   }
 
   &-board-mid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(9.3vh, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(7vh, 1fr));
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0.6vh;
     grid-row-gap: 0.6vh;
     justify-content: center;
     align-items: center;
-    padding-right: 1%;
+    padding-right: 26%;
     padding-left: 1%;
   }
 
@@ -74,6 +74,10 @@
     flex-direction: column;
     justify-content: flex-end;
     // padding-left: 1vw;
+  }
+
+  .header-small {
+    text-align: left;
   }
 
   &-board-left-header {
@@ -105,7 +109,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include calculateItemSizeVH(100, 100);
+    // @include calculateItemSizeVH(100, 100);
+    width: 7vh;
+    height: 7vh;
     padding: 1vh;
     border-radius: 1vmin;
     background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);

@@ -1,12 +1,18 @@
 .scene-2-page-7-4 {
   &-header {
     width: 92%;
-    margin-bottom: 5vh;
+
   }
 
   &-header-year {
     font-size: 3vmin;
     font-weight: 400;
+  }
+
+  .header__small-text {
+    color: var(--five-white-color);
+    font-size: 2.837vmin;
+    margin-bottom: 3vh;
   }
 
   &-body {
@@ -78,6 +84,7 @@
 
   &-board-left-header {
     margin-bottom: 2vh;
+    text-align: left;
   }
 
   &-board-svg-pills {
