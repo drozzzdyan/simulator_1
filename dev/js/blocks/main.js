@@ -72,6 +72,16 @@ function setInteractivePage3() {
   })
 }
 
+const showButtonTerms = (e) => {
+  const termsElem = document.querySelector('.terms')
+
+  if (e.target.dataset.terms === 'create-terms') termsElem.style.opacity = '1';
+  if (e.target.closest('.btn').dataset.terms === 'hide-terms') termsElem.style.opacity = '0';
+}
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   calculateMinHeight();
   createBackgroundAnimation();
@@ -79,4 +89,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setBtnControl();
 
   setInteractivePage3();
+  document.body.addEventListener('click', showButtonTerms)
 })
