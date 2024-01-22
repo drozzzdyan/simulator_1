@@ -1,0 +1,126 @@
+.scene-3-page-5 {
+  .page-body {
+    flex-grow: 0;
+  }
+
+  &__top-arrow {
+    margin-top: 3vh;
+    margin-bottom: 4.537vmin;
+    text-align: center;
+  }
+
+  &-cell-ico {
+    flex-shrink: 0;
+    @include calculateItemSizeVH(435, 83);
+  }
+
+
+  &__info {
+    display: flex;
+    gap: 3vmax;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 143vmin;
+  }
+
+  &__info-wrap {
+    flex-basis: 50%;
+    position: relative;
+  }
+
+  &__text {
+    @include fontProperty(2.963vmin, 1.2, 700, #fff, left);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 74%;
+  }
+
+  &__left {
+    background-image: url('../images/scene-2-page-5-left-block.svg');
+    background-size: cover;
+    @include calculateItemSizeVH(712, 283)
+  }
+
+  &__right {
+    background-image: url('../images/scene-3-page-5-right-block.svg');
+    background-size: cover;
+    @include calculateItemSizeVH(712, 283)
+  }
+
+  &__blue-text {
+    color: var(--font-color-pink);
+  }
+
+  &__white-color {
+    color: var(--five-white-color);
+  }
+
+  &__btns_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.759vmin;
+    width: 92%;
+    margin-left: auto;
+    margin-top: 13.981vmin;
+    margin-right: auto;
+  }
+
+  &__btn-controls {
+    text-transform: capitalize;
+
+
+  }
+
+  .btn {
+    padding: 3vh 2vw;
+    width: 20%;
+  }
+}
+
+
+@media (max-width: 1550px) {
+  .scene-3-page-5 {
+    &__left {
+      @include calculateItemSizeVH(662, 263)
+    }
+
+    &__right {
+      @include calculateItemSizeVH(662, 263)
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__text {
+      width: 78%;
+    }
+  }
+}
+
+@media (max-width: 1364px) {
+  .scene-3-page-5 {
+    &__left {
+      width: 47.962963vh;
+      height: 18.962963vh;
+    }
+
+    &__right {
+      width: 47.962963vh;
+      height: 18.962963vh;
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__text {
+      font-size: 2.2vmin;
+    }
+
+  }
+}
