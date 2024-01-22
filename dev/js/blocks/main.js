@@ -72,11 +72,27 @@ function setInteractivePage3() {
   })
 }
 
-const showButtonTerms = (e) => {
-  const termsElem = document.querySelector('.terms')
+const termsElem = document.querySelector('.terms');
+const popupTermsElem = document.querySelector('.popup-terms');
 
+const showButtonTerms = (e) => {
+  console.log(e.target);
   if (e.target.dataset.terms === 'create-terms') termsElem.style.opacity = '1';
-  if (e.target.closest('.btn').dataset.terms === 'hide-terms') termsElem.style.opacity = '0';
+  if (e.target.closest('.btn')?.dataset.terms === 'hide-terms') termsElem.style.opacity = '0';
+  if (e.target.closest('.popup-close')) {
+    popupTermsElem.style.opacity = '0';
+    setTimeout(() => {
+      popupTermsElem.style.visibility = 'hidden';
+
+    }, 100)
+  }
+}
+const openPopup = () => {
+
+  termsElem.addEventListener('click', e => {
+    e.preventDefault();
+    popupTermsElem.style.cssText = ' opacity:1; visibility: visible;'
+  })
 }
 
 
@@ -89,5 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setBtnControl();
 
   setInteractivePage3();
-  document.body.addEventListener('click', showButtonTerms)
+  document.body.addEventListener('click', showButtonTerms);
+  openPopup()
 })
