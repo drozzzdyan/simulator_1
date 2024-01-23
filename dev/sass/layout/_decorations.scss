@@ -4,6 +4,8 @@
   height: 0;
 }
 
+
+
 .circle-dec {
   position: fixed;
   border-radius: 100%;
@@ -176,19 +178,19 @@
     &-1 {
       @include calculateItemSizeVW(682, 682, 1400);
     }
-  
+
     &-2 {
       @include calculateItemSizeVW(357, 357, 1400);
     }
-  
+
     &-3 {
       @include calculateItemSizeVW(682, 682, 1400);
     }
-  
+
     &-4 {
       @include calculateItemSizeVW(357, 357, 1400);
     }
-  
+
     &-7 {
       @include calculateItemSizeVH(450, 450, 1600);
     }

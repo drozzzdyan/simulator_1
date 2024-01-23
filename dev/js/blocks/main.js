@@ -72,6 +72,32 @@ function setInteractivePage3() {
   })
 }
 
+const termsElem = document.querySelector('.terms');
+const popupTermsElem = document.querySelector('.popup-terms');
+
+const showButtonTerms = (e) => {
+  console.log(e.target);
+  if (e.target.dataset.terms === 'create-terms') termsElem.style.opacity = '1';
+  if (e.target.closest('.btn')?.dataset.terms === 'hide-terms') termsElem.style.opacity = '0';
+  if (e.target.closest('.popup-close')) {
+    popupTermsElem.style.opacity = '0';
+    setTimeout(() => {
+      popupTermsElem.style.visibility = 'hidden';
+
+    }, 300)
+  }
+}
+const openPopup = () => {
+
+  termsElem.addEventListener('click', e => {
+    e.preventDefault();
+    popupTermsElem.style.cssText = ' opacity:1; visibility: visible;'
+  })
+}
+
+
+
+
 function setAnimationPage96() {
   setInterval(() => {
     document.querySelector('.scene-1-page-9-6-svg-grandmom').classList.toggle('mirror');
@@ -85,5 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setBtnControl();
 
   setInteractivePage3();
+  document.body.addEventListener('click', showButtonTerms);
+  openPopup()
   setAnimationPage96();
 })
