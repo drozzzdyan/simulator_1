@@ -84,7 +84,7 @@ const showButtonTerms = (e) => {
     setTimeout(() => {
       popupTermsElem.style.visibility = 'hidden';
 
-    }, 300)
+    }, 500)
   }
 }
 const openPopup = () => {
