@@ -1,0 +1,218 @@
+.scene-1-page-10-2 {
+  &-header {
+    width: 69%;
+    margin-bottom: 3vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 3.7vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-left {
+    position: relative;
+    z-index: 2;
+    flex-basis: 63%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+  }
+
+  &-board-right {
+    position: relative;
+    flex-basis: 37%;
+    background-image: url("./../images/abstraction_dec_right_type_6@2x.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  &-table {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 35vh 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr 1.1fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr;
+    grid-template-areas:
+      "header-top header-top header-top header-top header-top"
+      "header-row header-1-column header-1-column header-2-column header-2-column"
+      "header-row subheader-1-column-1 subheader-1-column-2 subheader-2-column-3 subheader-2-column-4"
+      "header-mid header-mid header-mid header-mid header-mid"
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+    gap: 2% 1%;
+    max-height: 100%;
+  }
+
+  &-table-header-top {
+    grid-area: header-top;
+    font-size: 2.6vh;
+  }
+
+  &-table-header-row {
+    grid-area: header-row;
+  }
+
+  &-table-header-1-column {
+    grid-area: header-1-column;
+    font-size: 2.08vh;
+  }
+
+  &-table-header-2-column {
+    grid-area: header-2-column;
+    font-size: 2.08vh;
+  }
+
+  &-table-subheader-1-column {
+    grid-area: subheader-1-column-1;
+    font-size: 2.08vh;
+  }
+
+  &-table-subheader-1-column {
+    grid-area: subheader-1-column-2;
+    font-size: 2.08vh;
+  }
+
+  &-table-subheader-2-column {
+    grid-area: subheader-2-column-3;
+    font-size: 2.08vh;
+  }
+
+  &-table-subheader-2-column {
+    grid-area: subheader-2-column-4;
+    font-size: 2.08vh;
+  }
+
+  &-table-header-mid {
+    grid-area: header-mid;
+  }
+
+  &-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8vh;
+    border-radius: 1.5vmin;
+    background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
+    box-shadow:
+      0.2vh 0.3vh 1vh 0vh #070709 inset,
+      -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
+  }
+
+  &-note {
+    font-size: 1.2vmin;
+  }
+
+  &-board-header {
+    padding: 1vh;
+  }
+
+  &-bubble {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    @include calculateItemSizeVH(280, 240);
+  }
+
+  &-svg-bubble-small {
+    position: absolute;
+    right: 8%;
+    bottom: -20%;
+    @include calculateItemSizeVH(30, 30);
+    background-color: #fff;
+    border-radius: 100%;
+    animation: scene1page81bubbling1 6s linear 0s infinite;
+  }
+
+  &-svg-bubble-mid {
+    position: absolute;
+    right: 18%;
+    bottom: -10%;
+    @include calculateItemSizeVH(50, 50);
+    background-color: #fff;
+    border-radius: 100%;
+    animation: scene1page81bubbling2 6s linear 0s infinite;
+  }
+
+  &-svg-bubble-main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    animation: scene1page81bubbling3 6s linear 0s infinite;
+  }
+
+  &-svg-bacteria {
+    position: absolute;
+  }
+
+  &-svg-bacteria-1 {
+    top: 0%;
+    left: 95%;
+    @include calculateItemSizeVH(50, 50);
+    animation: scene1page81bubbling1 9s linear 0s infinite;
+  }
+
+  &-svg-bacteria-2 {
+    top: 110%;
+    left: 25%;
+    @include calculateItemSizeVH(42, 42);
+    animation: scene1page81bubbling2 9s linear 0s infinite;
+  }
+
+  &-svg-bacteria-3 {
+    top: 86%;
+    left: 7%;
+    @include calculateItemSizeVH(35, 35);
+    animation: scene1page81bubbling3 9s linear 0s infinite;
+  }
+
+  &-svg-grandmom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @include calculateItemSizeVH(679, 598);
+  }
+}
+
+@media (max-aspect-ratio: 7/4) {
+  .scene-1-page-10-2 {
+    &-header {
+      width: 100%;
+      font-size: 3.8vmin;
+    }
+
+    &-board-left {
+      flex-basis: 100%;
+    }
+
+    &-board-right {
+      display: none;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-10-2 {
+    &-header {
+      font-size: 2.3vmin;
+      margin-bottom: 2vh;
+    }
+
+    &-bubble {
+      @include calculateItemSizeVH(349, 349, 1500);
+    }
+  }
+}

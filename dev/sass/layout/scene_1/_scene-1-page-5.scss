@@ -7,6 +7,19 @@
     @include calculateItemSizeVH(1543, 420);
     max-width: 100%;
   }
+
+  &-board-note {
+    position: absolute;
+    left: 5%;
+    bottom: 0.4%;
+    width: 90%;
+    font-size: 1.2vmin;
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
 }
 
 
@@ -15,6 +28,11 @@
     &-svg-sheme {
       @include calculateItemSizeVW(1543, 420);
     }
+
+    &-board-note {
+      left: 1%;
+      width: 98%;
+      font-size: 1.1vmin;
+    }
   }
-  
 }

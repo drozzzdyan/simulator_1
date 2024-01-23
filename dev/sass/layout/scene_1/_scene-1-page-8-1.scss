@@ -144,6 +144,14 @@
     }
   }
 
+  &-note {
+    position: absolute;
+    right: 0%;
+    bottom: -10%;
+    width: 32vh;
+    font-size: 1.2vmin;
+  }
+
   &__middle-count {
     position: relative;
     @include fontProperty(2.107vmin, 1, 400, #fff, center);
@@ -170,6 +178,7 @@
   }
 
   &__right-bg {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

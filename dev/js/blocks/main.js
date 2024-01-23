@@ -84,7 +84,7 @@ const showButtonTerms = (e) => {
     setTimeout(() => {
       popupTermsElem.style.visibility = 'hidden';
 
-    }, 100)
+    }, 300)
   }
 }
 const openPopup = () => {
@@ -98,6 +98,12 @@ const openPopup = () => {
 
 
 
+function setAnimationPage96() {
+  setInterval(() => {
+    document.querySelector('.scene-1-page-9-6-svg-grandmom').classList.toggle('mirror');
+  }, 800);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   calculateMinHeight();
   createBackgroundAnimation();
@@ -107,4 +113,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setInteractivePage3();
   document.body.addEventListener('click', showButtonTerms);
   openPopup()
+  setAnimationPage96();
 })

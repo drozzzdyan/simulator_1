@@ -1,0 +1,163 @@
+.scene-1-page-10-1 {
+  &-header {
+    width: 69%;
+    margin-bottom: 3vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 1vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-left {
+    position: relative;
+    z-index: 2;
+    flex-basis: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+  }
+
+  &-board-right {
+    position: relative;
+    flex-basis: 22%;
+    background-image: url("./../images/abstraction_scene_2_page_9_4_right@2x.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  &-svg-sheme {
+    @include calculateItemSizeVH(1336, 651);
+    max-width: 98%;
+    max-height: 98%;
+  }
+
+  &-note {
+    align-self: start;
+    margin-bottom: 1vh;
+    font-size: 1.2vmin;
+  }
+
+  &-board-right-circle-dec {
+    left: initial;
+    bottom: -18%;
+    right: -69%;
+    filter: blur(3vw);
+  }
+
+  &-svg-group {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    @include calculateItemSizeVH(368, 357);
+  }
+
+  &-svg-pills {
+    width: inherit;
+    height: inherit;
+  }
+  
+  &-arrow {
+    position: absolute;
+    @include calculateItemSizeVH(37, 37);
+    border-left: 0.7vh solid #fff;
+    border-bottom: 0.7vh solid #fff;
+  }
+
+  &-arrow-1 {
+    left: 16%;
+    top: -9%;
+    transform: rotate(-45deg);
+    animation: scene1page101arrowbot 3s linear 0s infinite;
+  }
+
+  &-arrow-2 {
+    left: 16%;
+    top: -15%;
+    transform: rotate(-45deg);
+    animation: scene1page101arrowbot 3s linear 0s infinite;
+  }
+
+  &-arrow-3 {
+    right: 18%;
+    top: -4%;
+    transform: rotate(135deg);
+    animation: scene1page101arrowtop 3s linear 0s infinite;
+  }
+
+  &-arrow-4 {
+    right: 18%;
+    top: -10%;
+    transform: rotate(135deg);
+    animation: scene1page101arrowtop 3s linear 0s infinite;
+  }
+
+  @keyframes scene1page101arrowbot {
+    0% {
+      transform: translateY(0) rotate(-45deg);
+    }
+
+    50% {
+      transform: translateY(1vh) rotate(-45deg);
+    }
+
+    100% {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+
+  @keyframes scene1page101arrowtop {
+    0% {
+      transform: translateY(0) rotate(135deg);
+    }
+
+    50% {
+      transform: translateY(-1vh) rotate(135deg);
+    }
+
+    100% {
+      transform: translateY(0) rotate(135deg);
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/4) {
+  .scene-1-page-10-1 {
+    &-header {
+      width: 100%;
+      font-size: 3.8vmin;
+    }
+
+    &-board-right-circle-dec {
+      right: -100%;
+    }
+
+    &-svg-group {
+      @include calculateItemSizeVW(368, 357);
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-1-page-10-1 {
+    &-board-left {
+      flex-basis: 100%;
+    }
+
+    &-board-right {
+      flex-basis: 0;
+      display: none;
+    }
+  }
+}
