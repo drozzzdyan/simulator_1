@@ -1,0 +1,150 @@
+.scene-3-page-7-2 {
+  &-header {
+    width: 92%;
+    margin-bottom: 3vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 3.7vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-left {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 38%;
+    padding: 4vh;
+  }
+
+  &-board-right {
+    position: relative;
+    width: 62%;
+    background-image: url("./../images/abstraction_dec_scene_1_page_7_2@2x.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  &-board-header {
+    margin-bottom: 5vh;
+  }
+
+  &-board-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4vh;
+    border-radius: 1.5vmin;
+    background: linear-gradient(300deg, #494d51 -73.1%, #2d3035 81.5%);
+    box-shadow:
+      0.2vh 0.3vh 1vh 0vh #070709 inset,
+      -0.2vh -0.2vh 1vh 0vh rgba(255, 255, 255, 0.05) inset;
+  }
+
+  &-board-descr {
+    padding: 3vh;
+    font-size: 2.9vmin;
+    line-height: 120%;
+  }
+
+  &-svg-group {
+    position: absolute;
+    @include calculateItemSizeVH(587, 587);
+    right: 15%;
+    top: 10%;
+  }
+
+  &-svg-sheme {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    max-height: 93%;
+    animation: 30s linear 0s infinite diagram-rotate;
+  }
+
+  &-svg-heart {
+    position: absolute;
+    right: 33%;
+    top: 26%;
+    @include calculateItemSizeVH(200, 200);
+    animation: 1s linear 0s infinite heartbeat;
+  }
+
+  @keyframes diagram-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    35% {
+      transform: rotate(30deg);
+    }
+
+    55% {
+      transform: rotate(0deg);
+    }
+
+    75% {
+      transform: rotate(-10deg);
+    }
+
+    100% {
+      transform: rotate(1);
+    }
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-3-page-7-2 {
+    &-header {
+      width: 100%;
+      font-size: 3.8vmin;
+    }
+
+    &-board-left {
+      width: 55%;
+    }
+
+    &-board-right {
+      width: 45%;
+    }
+
+    &-board-header {
+      font-size: 2.8vmin;
+    }
+
+    &-svg-group {
+      top: 28%;
+      @include calculateItemSizeVH(587, 587, 1600);
+    }
+
+    &-svg-heart {
+      @include calculateItemSizeVH(200, 200, 1600);
+    }
+  }
+}

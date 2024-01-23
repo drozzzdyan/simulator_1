@@ -95,23 +95,21 @@ const openPopup = () => {
   })
 }
 
-
-
-
-function setAnimationPage96() {
+function setAnimationPage6() {
   setInterval(() => {
     document.querySelector('.scene-1-page-9-6-svg-grandmom').classList.toggle('mirror');
+    document.querySelector('.scene-3-page-6-6-svg-mom').classList.toggle('mirror');
   }, 800);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   calculateMinHeight();
   createBackgroundAnimation();
-  // setDecorationType(1);
+  setDecorationType(1);
   setBtnControl();
 
   setInteractivePage3();
   document.body.addEventListener('click', showButtonTerms);
   openPopup()
-  setAnimationPage96();
+  setAnimationPage6();
 })

@@ -1,0 +1,97 @@
+.scene-3-page-6-2 {
+  &-header {
+    width: 80%;
+    margin-bottom: 3vh;
+  }
+
+  &-boards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 5vh;
+  }
+
+  &-board {
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-board-header {
+    margin-bottom: 2vh;
+  }
+
+  &-note {
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    width: 40vh;
+    font-size: 1.4vmin;
+  }
+}
+
+@media (max-aspect-ratio: 7/4) {
+  .scene-3-page-6-2 {
+    &-subheader {
+      width: 100%;
+      font-size: 3vmin;
+    }
+
+    &-descr {
+      font-size: 1.7vmin;
+    }
+
+    &-note {
+      font-size: 1.3vmin;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/5) {
+  .scene-3-page-6-2 {
+    &-header {
+      width: 100%;
+      font-size: 4vmin;
+    }
+
+    &-subheader {
+      width: 100%;
+      font-size: 2.4vmin;
+    }
+
+    &-board-header {
+      font-size: 2.4vmin;
+    }
+
+    &-descr {
+      font-size: 1.4vmin;
+    }
+
+    &-board-line-ico {
+      @include calculateItemSizeVH(110, 130, 1400);
+    }
+
+    &-note {
+      bottom: 1%;
+      font-size: 1.1vmin;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 7/6) {
+  .scene-3-page-6-2 {
+    &-board-header {
+      font-size: 2vmin;
+    }
+
+    &-descr {
+      font-size: 1.26vmin;
+    }
+  }
+}
