@@ -6654,7 +6654,6 @@ p {
 .scene-3-page-8-1__right-animate-block-wrap {
   position: relative;
   width: 100%;
-  width: 61.8518518519vh;
   height: 41.6666666667vh;
   background-image: url("./../images/abstraction_dec_right_type_6@2x.png");
   background-size: cover;
@@ -6790,6 +6789,27 @@ p {
   }
 }
 @media (max-aspect-ratio: 7/5) {
+  .scene-3-page-8-1__right-animate-block-wrap {
+    height: 26.371vmin;
+  }
+  .scene-3-page-8-1__svg-bubble-mid {
+    left: 44%;
+    bottom: 50%;
+    width: 2.148148vh;
+    height: 2.148148vh;
+  }
+  .scene-3-page-8-1__svg-bubble-small {
+    left: 36%;
+    bottom: 42%;
+    width: 1.12963vh;
+    height: 1.12963vh;
+  }
+  .scene-3-page-8-1__svg-bubble-main {
+    top: 0;
+    right: 0;
+    width: 13.592593vh;
+    height: 8.777778vh;
+  }
   .scene-3-page-8-1__right-text-wrap {
     padding: 1.5vmin 1vmin;
   }

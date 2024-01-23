@@ -222,7 +222,8 @@
   &__right-animate-block-wrap {
     position: relative;
     width: 100%;
-    @include calculateItemSizeVH(668, 450);
+    // @include calculateItemSizeVH(668, 450);
+    height: 41.6666666667vh;
     background-image: url("./../images/abstraction_dec_right_type_6@2x.png");
     background-size: cover;
     background-position: left;
@@ -376,10 +377,33 @@
   }
 }
 
+
+
 @media (max-aspect-ratio: 7/5) {
   .scene-3-page-8-1 {
     &__right-animate-block-wrap {
-      // height: 26.371vmin;
+      height: 26.371vmin;
+    }
+
+    &__svg-bubble-mid {
+      left: 44%;
+      bottom: 50%;
+      width: 2.148148vh;
+      height: 2.148148vh;
+    }
+
+    &__svg-bubble-small {
+      left: 36%;
+      bottom: 42%;
+      width: 1.12963vh;
+      height: 1.12963vh;
+    }
+
+    &__svg-bubble-main {
+      top: 0;
+      right: 0;
+      width: 13.592593vh;
+      height: 8.777778vh;
     }
 
     &__right-text-wrap {
