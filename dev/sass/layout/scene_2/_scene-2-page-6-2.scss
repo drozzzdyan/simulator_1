@@ -6,10 +6,10 @@
 
   &-board-note {
     position: absolute;
-    bottom: -24%;
+    bottom: -8%;
     right: 0;
-    width: 30%;
-    font-size: 1.4vmin;
+    width: 34vh;
+    font-size: 1.3vmin;
   }
 
   .page-body {
@@ -53,7 +53,6 @@
   &__hand {
     width: 100%;
     height: 54.2592592593vh;
-    // @include calculateItemSizeVH(665, 586)
     animation: animHand 2.5s linear infinite;
   }
 
@@ -63,25 +62,13 @@
     left: 4%;
     width: 27%;
     height: 23.2407407407vh;
-    // @include calculateItemSizeVH(173, 251)
   }
-
-  &__notice {
-    @include fontProperty(1.204vmin, 1.2, 400, #fff, left);
-    padding: 0 2vmin 2vmin 2vmin;
-  }
-
 }
 
 @media (max-aspect-ratio: 7/5) {
   .scene-2-page-6-2 {
     &__hand {
       height: 36.259259vh;
-    }
-
-    &-board-note {
-      bottom: -25%;
-      width: 25%;
     }
   }
 }

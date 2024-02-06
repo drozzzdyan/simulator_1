@@ -1,9 +1,7 @@
 .scene-2-page-6-4 {
-
-
   .header {
     margin-bottom: 2vh;
-    width: 70%;
+    width: 65%;
   }
 
   .page-body {
@@ -16,12 +14,9 @@
     border: 1.5px solid #323465;
     background: linear-gradient(110deg, #000 -73.15%, #282A2F 106.81%);
     backdrop-filter: blur(22px);
-
-
   }
 
   &__left-svg {
-    // @include calculateItemSizeVH(805, 615)
     width: 100%;
     height: 100%;
   }
@@ -45,7 +40,6 @@
 
   &__right-small-ball {
     opacity: 0;
-    // @include calculateItemSizeVH(50, 48);
     width: 5.4%;
     height: 7.7%;
     position: absolute;
@@ -56,7 +50,6 @@
 
   &__right-medium-ball {
     opacity: 0;
-    // @include calculateItemSizeVH(75, 68);
     position: absolute;
     top: 18%;
     left: 28%;
@@ -67,7 +60,6 @@
 
   &__right-text-ball {
     opacity: 0;
-    // @include calculateItemSizeVH(582, 582);
     width: 54%;
     height: 82.2%;
     position: relative;

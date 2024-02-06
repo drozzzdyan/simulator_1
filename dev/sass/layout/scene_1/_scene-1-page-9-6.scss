@@ -11,7 +11,7 @@
   &-svg-grandmom {
     position: absolute;
     left: 0%;
-    bottom: 0%;
+    bottom: 8%;
     @include calculateItemSizeVH(452, 592);
   }
 
@@ -30,6 +30,10 @@
       width: 75%;
       margin-bottom: 5vh;
       font-size: 5vh;
+    }
+
+    &-svg-grandmom {
+      @include calculateItemSizeVH(452, 592, 1500);
     }
   }
 }

@@ -96,6 +96,14 @@
     animation: scene1page93bubbling3 3s linear 0s 1;
   }
 
+  &-board-note {
+    position: absolute;
+    bottom: -9%;
+    right: 0;
+    width: 35vh;
+    font-size: 1.2vmin;
+  }
+
   @keyframes scene1page93bubbling1 {
     0% {
       opacity: 0;
@@ -181,6 +189,11 @@
 
     &-bubble {
       @include calculateItemSizeVH(449, 394, 1500);
+    }
+
+    &-board-note {
+      bottom: -15%;
+      width: 25%;
     }
   }
 }

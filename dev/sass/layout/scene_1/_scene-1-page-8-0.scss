@@ -1,0 +1,72 @@
+.scene-1-page-8-0 {
+  &-header {
+    width: 76%;
+    margin-bottom: 5vh;
+  }
+
+  &-header-year {
+    font-size: 3vmin;
+    font-weight: 400;
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 2vh;
+  }
+
+  &-board {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2vh;
+    border-radius: 1vmin;
+    background: linear-gradient(110deg, #000 -73.15%, #282a2f 106.81%);
+  }
+
+  &-svg-sheme {
+    width: 100%;
+  }
+
+  &-note {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2vmin;
+  }
+
+  &-note-left {
+    flex-basis: 35%;
+  }
+
+  &-note-right {
+    flex-basis: 23%;
+  }
+}
+
+@media (max-aspect-ratio: 7/4) {
+  .scene-1-page-8-0 {
+    &-header {
+      width: 100%;
+      font-size: 3.5vmin;
+    }
+
+    &-note {
+      font-size: 1.1vmin;
+    }
+  
+    &-note-left {
+      flex-basis: 45%;
+    }
+  
+    &-note-right {
+      flex-basis: 30%;
+    }
+  }
+}

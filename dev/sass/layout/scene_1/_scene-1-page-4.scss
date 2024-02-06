@@ -1,6 +1,6 @@
 .scene-1-page-4 {
   &-header {
-    width: 70%;
+    width: 80%;
     margin-bottom: 6vh;
   }
 
@@ -13,7 +13,7 @@
 @media (max-aspect-ratio: 7/5) {
   .scene-1-page-4 {
     &-header {
-      width: 70%;
+      width: 100%;
       font-size: 4vmin;
     }
   }

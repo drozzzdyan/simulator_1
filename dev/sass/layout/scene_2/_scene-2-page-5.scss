@@ -1,8 +1,4 @@
 .scene-2-page-5 {
-  .page-body {
-    flex-grow: 0;
-  }
-
   &__top-arrow {
     margin-top: 3vh;
     margin-bottom: 4.537vmin;
@@ -56,28 +52,6 @@
 
   &__white-color {
     color: var(--five-white-color);
-  }
-
-  &__btns_block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.759vmin;
-    width: 92%;
-    margin-left: auto;
-    margin-top: 13.981vmin;
-    margin-right: auto;
-  }
-
-  &__btn-controls {
-    text-transform: capitalize;
-
-
-  }
-
-  .btn {
-    padding: 3vh 2vw;
-    width: 20%;
   }
 }
 

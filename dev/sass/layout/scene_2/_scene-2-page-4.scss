@@ -1,8 +1,6 @@
 .scene-2-page-4 {
-
-
   .header {
-    max-width: 60vmax;
+    max-width: 80%;
   }
 
   &__spinner {
@@ -11,6 +9,7 @@
     background-image: url(../images/scene-2-page-4-spinner.svg);
     background-size: cover;
     @include calculateItemSizeVH(1104, 629);
+    max-width: 100vw;
     margin-bottom: 2vh;
   }
 
@@ -34,5 +33,14 @@
     position: absolute;
     bottom: 11%;
     left: 6%;
+  }
+}
+
+@media (max-aspect-ratio: 7/4) {
+  .scene-2-page-4 {
+    .header {
+      max-width: 100%;
+      font-size: 3.5vmin;
+    }
   }
 }

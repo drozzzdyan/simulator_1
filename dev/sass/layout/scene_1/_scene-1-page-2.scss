@@ -5,7 +5,7 @@
   }
 
   &-subheader {
-    width: 74%;
+    width: 68%;
     margin-bottom: 3vh;
   }
 
@@ -28,7 +28,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: stretch;
-      margin-bottom: 2vh;
+      margin-bottom: 1.5vh;
 
       &-ico {
         flex-shrink: 0;
@@ -88,6 +88,12 @@
         transform: translateY(0);
       }
     }
+  }
+
+  &-board-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 

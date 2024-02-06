@@ -184,6 +184,15 @@
     bottom: 0;
     right: 0;
     @include calculateItemSizeVH(679, 598);
+    border-radius: 1vmin;
+  }
+
+  &-board-note {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 23%;
+    font-size: 1.4vmin;
   }
 }
 
@@ -201,6 +210,10 @@
     &-board-right {
       display: none;
     }
+
+    &-board-note {
+      font-size: 1.2vmin;
+    }
   }
 }
 
@@ -213,6 +226,10 @@
 
     &-bubble {
       @include calculateItemSizeVH(349, 349, 1500);
+    }
+
+    &-board-note {
+      font-size: 1vmin;
     }
   }
 }

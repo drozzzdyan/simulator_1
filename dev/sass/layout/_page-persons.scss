@@ -58,6 +58,15 @@
   }
 }
 
+.scene-1-page-0-board-note {
+  position: absolute;
+  z-index: 15;
+  left: 5.674vmin;
+  bottom: 1.3vmin;
+  width: 90vh;
+  font-size: 1.2vmin;
+}
+
 @media (max-aspect-ratio: 7/5) {
   .page-persons-header {
     width: 90%;

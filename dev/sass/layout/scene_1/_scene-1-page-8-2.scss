@@ -107,6 +107,11 @@
 
   &-note {
     font-size: 1.4vmin;
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
   }
 }
 

@@ -44,10 +44,10 @@
 
   &-board-note {
     position: absolute;
+    right: 0%;
     bottom: -15%;
-    left: 0;
-    width: 30%;
-    font-size: 1.4vmin;
+    width: 35vh;
+    font-size: 1.2vmin;
   }
 
   &-svg-sheme {
@@ -80,7 +80,7 @@
     }
 
     &-board-note {
-      bottom: -20%;
+      bottom: -22%;
       width: 25%;
     }
 
